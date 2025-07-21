@@ -299,6 +299,15 @@ footer {
   margin: 10px;
 }
 
+footer a {
+  color: white;
+  text-decoration: none; /* opcional */
+}
+
+footer a:hover {
+  color: #00ffae; /* opcional, cor no hover */
+}
+
 .social-icons img {
   width: 30px;
   margin-right: 10px;
