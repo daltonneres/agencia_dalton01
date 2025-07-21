@@ -27,15 +27,13 @@ Este projeto é o site institucional da Connect SA, distribuidor autorizado Sera
 Abra o arquivo index.html no navegador de sua preferência.
 
 Estrutura de pastas
-pgsql
-Copiar
-Editar
 / (raiz)
 │
 ├── index.html
 ├── styles.css
 ├── script.js
 └── imagens/
+
 Contato
 Para dúvidas ou sugestões, entre em contato:
 
