@@ -26,14 +26,6 @@ Este projeto é o site institucional da Connect SA, distribuidor autorizado Sera
    git clone https://github.com/seu-usuario/seu-repositorio.git
 Abra o arquivo index.html no navegador de sua preferência.
 
-Estrutura de pastas
-/ (raiz)
-│
-├── index.html
-├── styles.css
-├── script.js
-└── imagens/
-
 Contato
 Para dúvidas ou sugestões, entre em contato:
 
