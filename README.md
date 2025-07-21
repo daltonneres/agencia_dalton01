@@ -23,15 +23,16 @@ Este projeto é o site institucional da Connect SA, distribuidor autorizado Sera
 
 1. Clone este repositório:
    ```bash
- git clone https://github.com/daltonneres/agencia_dalton01.git
-Abra o arquivo index.html no navegador de sua preferência.
+   git clone https://github.com/daltonneres/agencia_dalton01.git
 
-Contato
+2. Abra o arquivo index.html no navegador de sua preferência.
+3. E logo após execute o mesmo
+
+## Contato
 Para dúvidas ou sugestões, entre em contato:
 
 Email: daltonneres1@gmail.com
+LinkedIn: https://www.linkedin.com/in/dalton-josé-neres
 
-LinkedIn: https://linkedin.com/in/Dalton-José-Neres
-
-Licença
+## Licença
 Este projeto está licenciado sob a licença MIT — veja o arquivo LICENSE para detalhes.
