@@ -225,20 +225,6 @@ nav a {
   /* − */
 }
 
-.accordion-content {
-  display: none;
-  padding: 20px;
-  background-color: #0044ff;
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 1.5;
-  text-align: left;
-}
-
-.accordion-item.open .accordion-content {
-  display: block;
-}
-
 .form-section {
   display: flex;
   align-items: center;
