@@ -23,7 +23,7 @@ Este projeto é o site institucional da Connect SA, distribuidor autorizado Sera
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+ git clone https://github.com/daltonneres/agencia_dalton01.git
 Abra o arquivo index.html no navegador de sua preferência.
 
 Contato
