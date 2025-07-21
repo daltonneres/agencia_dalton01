@@ -9,42 +9,43 @@
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
+
 <body>
 
-<header>
-  <div class="header-horizontal">
-    <img src="logo_connect_branco.png" alt="Logo Conecta" title="Logo Conecta" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="#">A Empresa</a></li>
-        <li><a href="#">Soluções</a></li>
-        <li><a href="#">Seja Connect</a></li>
-        <li><a href="#">2ª Via de Boleto</a></li>
-        <li><a href="#">Atendimento</a></li>
-        <li><a href="#" class="btn-acessar">Acessar</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<div class="header-spacer"></div>
-
-<section class="banner">
-  <div class="slider">
-    <img src="banner-one.jpg" alt="Clique Aqui" title="Clique Aqui" class="active" />
-    <img src="banner-two.jpg" alt="Clique Aqui" title="Clique Aqui" />
-    <img src="banner-three.jpg" alt="Clique Aqui" title="Clique Aqui" />
-    <img src="banner-four.jpg" alt="Clique Aqui" title="Clique Aqui" />
-    
-    <div class="indicators">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span> <!-- você tem 4 imagens, então 4 bolinhas -->
+  <header>
+    <div class="header-horizontal">
+      <img src="logo_connect_branco.png" alt="Logo Conecta" title="Logo Conecta" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">A Empresa</a></li>
+          <li><a href="#">Soluções</a></li>
+          <li><a href="#">Seja Connect</a></li>
+          <li><a href="#">2ª Via de Boleto</a></li>
+          <li><a href="#">Atendimento</a></li>
+          <li><a href="#" class="btn-acessar">Acessar</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</section>
-  
-  <section class="solucoes">
+  </header>
+  <div class="header-spacer"></div>
+
+  <section class="banner animate-on-scroll">
+    <div class="slider">
+      <img src="banner-one.jpg" alt="Clique Aqui" title="Clique Aqui" class="active" />
+      <img src="banner-two.jpg" alt="Clique Aqui" title="Clique Aqui" />
+      <img src="banner-three.jpg" alt="Clique Aqui" title="Clique Aqui" />
+      <img src="banner-four.jpg" alt="Clique Aqui" title="Clique Aqui" />
+
+      <div class="indicators">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span> <!-- você tem 4 imagens, então 4 bolinhas -->
+      </div>
+    </div>
+  </section>
+
+  <section class="solucoes animate-on-scroll">
     <h2>As melhores soluções para todos os negócios.</h2>
     <div class="cards">
       <div class="card">
@@ -77,7 +78,7 @@
     </div>
   </section>
 
-  <section class="faq">
+  <section class="faq animate-on-scroll">
     <h2>Consulte para mais segurança nas negociações.</h2>
     <p>Previna a inadimplência e tenha informações relevantes sobre seus clientes e fornecedores para negociar com mais
       segurança.</p>
@@ -85,18 +86,15 @@
     <div class="faq-cards">
       <div class="faq-card">
         <h3>Serasa Recomenda</h3>
-        <p>Automatize o processo de concessão de crédito com uma simples consulta e receba uma recomendação imediata.
-        </p>
+        <p>Automatize o processo de concessão de crédito com uma simples consulta e receba uma recomendação imediata.</p>
       </div>
       <div class="faq-card">
         <h3>Relatório Básico</h3>
-        <p>Ideal para negociações simples e prazos curtos. Consulta simples de CPF ou CNPJ com informações cadastrais.
-        </p>
+        <p>Ideal para negociações simples e prazos curtos. Consulta simples de CPF ou CNPJ com informações cadastrais.</p>
       </div>
       <div class="faq-card">
         <h3>Relatório Avançado</h3>
-        <p>Análise completa para negócios com valores elevados ou prazos longos. Indicado para decisões estratégicas.
-        </p>
+        <p>Análise completa para negócios com valores elevados ou prazos longos. Indicado para decisões estratégicas.</p>
       </div>
       <div class="faq-card">
         <h3>Negativação de Devedores</h3>
@@ -121,8 +119,9 @@
     </div>
   </section>
 
-  <section class="form-section">
+  <section class="form-section animate-on-scroll">
     <div class="form-text">
+      <!-- Caso queira colocar algum texto aqui -->
     </div>
     <img src="img_consultasserasa.png" alt="Imagem celular" title="Imagem celular" />
     <div class="formulario-box">
@@ -166,7 +165,6 @@
         </p>
         <input type="hidden" name="_autoresponse" value="Recebemos seus dados! Em breve entraremos em contato.">
       </form>
-
     </div>
   </section>
 
@@ -199,7 +197,7 @@
         <a href="https://www.facebook.com/"><img src="facebook.png" alt="Nos siga no Facebook"
             title="Nos siga no Facebook" /></a>
         <a href="https://www.instagram.com/"><img src="instagram.png" alt="Nos siga no Instagram"
-            title="Nos siga no Instagra" /></a>
+            title="Nos siga no Instagram" /></a>
         <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="Nos siga no LinkedIn"
             title="Nos siga no LinkedIn" /></a>
         <a href="https://www.youtube.com/"><img src="youtube.png" alt="Nos siga no Youtube"
@@ -209,6 +207,7 @@
 
     <p class="rodape-final">© Connect Informações e Tecnologia S/A | CNPJ: 00.000.000/0001-00</p>
   </footer>
+
   <button id="scrollTopBtn" class="scroll-top">↑</button>
 
   <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-button">

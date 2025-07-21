@@ -72,3 +72,21 @@ if (scrollTopBtn) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // anima só uma vez
+      }
+    });
+  }, {
+    threshold: 0.15, // 15% do elemento visível para ativar
+  });
+
+  // Seleciona os elementos que terão animação ao aparecer
+  const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+
+  elementsToAnimate.forEach(el => observer.observe(el));
+});

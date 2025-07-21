@@ -410,6 +410,19 @@ footer a:hover {
   height: 50px;
 }
 
+/* Estado inicial - invisível e levemente deslocado para baixo */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Quando ativar a animação */
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 1024px) {
   header {
