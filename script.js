@@ -1,73 +1,74 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // CARROSSEL COM SETAS
-  const images = document.querySelectorAll(".slider img");
-  let current = 0;
+const slides = document.querySelectorAll('.slider img');
+const dots = document.querySelectorAll('.dot');
 
-  function showSlide(index) {
-    images.forEach((img, i) => {
-      img.classList.toggle("active", i === index);
-    });
-  }
+let currentIndex = 0;
+const intervalTime = 4000; // tempo entre slides em ms
+let slideInterval;
 
-  function nextSlide() {
-    current = (current + 1) % images.length;
-    showSlide(current);
-  }
-
-  function prevSlide() {
-    current = (current - 1 + images.length) % images.length;
-    showSlide(current);
-  }
-
-  showSlide(current);
-
-  let slideInterval = setInterval(nextSlide, 4000);
-
-  const btnPrev = document.querySelector(".arrow-left");
-  const btnNext = document.querySelector(".arrow-right");
-
-  btnPrev.addEventListener("click", () => {
-    prevSlide();
-    resetInterval();
+// Função para mostrar o slide no índice escolhido
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+    dots[i].classList.toggle('active', i === index);
   });
+  currentIndex = index;
+}
 
-  btnNext.addEventListener("click", () => {
-    nextSlide();
-    resetInterval();
-  });
+// Próximo slide (com loop)
+function nextSlide() {
+  let nextIndex = (currentIndex + 1) % slides.length;
+  showSlide(nextIndex);
+}
 
-  function resetInterval() {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, 4000);
-  }
+// Inicia troca automática
+function startSlideShow() {
+  slideInterval = setInterval(nextSlide, intervalTime);
+}
 
-  // FAQ CARDS: Toggle do conteúdo ao clicar no título
-  const faqCards = document.querySelectorAll(".faq-card");
+// Para troca automática
+function stopSlideShow() {
+  clearInterval(slideInterval);
+}
 
-  faqCards.forEach(card => {
-    const title = card.querySelector("h3");
-    const content = card.querySelector("p");
-
-    content.style.display = "none"; // inicializa escondido
-    title.style.cursor = "pointer";
-
-    title.addEventListener("click", () => {
-      if (content.style.display === "none") {
-        content.style.display = "block";
-      } else {
-        content.style.display = "none";
-      }
-    });
+// Clique nas bolinhas para trocar slide e reiniciar autoplay
+dots.forEach((dot, idx) => {
+  dot.addEventListener('click', () => {
+    stopSlideShow();
+    showSlide(idx);
+    startSlideShow();
   });
 });
 
-  // Botão voltar ao topo (mantém seu código)
-  const scrollTopBtn = document.getElementById("scrollTopBtn");
-  if (scrollTopBtn) {
-    window.addEventListener("scroll", () => {
-      scrollTopBtn.style.display = window.scrollY > 200 ? "block" : "none";
-    });
-    scrollTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
+// Inicializa mostrando o primeiro slide e começa o autoplay
+showSlide(0);
+startSlideShow();
+
+/* -------------------- */
+/* Seu código FAQ e botão voltar ao topo aqui, sem alterações */
+const faqCards = document.querySelectorAll(".faq-card");
+
+faqCards.forEach(card => {
+  const title = card.querySelector("h3");
+  const content = card.querySelector("p");
+
+  content.style.display = "none"; // inicializa escondido
+  title.style.cursor = "pointer";
+
+  title.addEventListener("click", () => {
+    if (content.style.display === "none") {
+      content.style.display = "block";
+    } else {
+      content.style.display = "none";
+    }
+  });
+});
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+if (scrollTopBtn) {
+  window.addEventListener("scroll", () => {
+    scrollTopBtn.style.display = window.scrollY > 200 ? "block" : "none";
+  });
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
