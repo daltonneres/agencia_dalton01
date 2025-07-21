@@ -1,29 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // CARROSSEL COM SETAS
   const images = document.querySelectorAll(".slider img");
-  const dotsContainer = document.querySelector(".dots");
   let current = 0;
-
-  // Limpa dots antigos (se houver)
-  dotsContainer.innerHTML = "";
-
-  // Cria as bolinhas
-  images.forEach((_, index) => {
-    const dot = document.createElement("span");
-    dot.classList.add("dot");
-    if (index === 0) dot.classList.add("active");
-    dot.addEventListener("click", () => {
-      current = index;
-      showSlide(current);
-    });
-    dotsContainer.appendChild(dot);
-  });
-
-  const dots = document.querySelectorAll(".dot");
 
   function showSlide(index) {
     images.forEach((img, i) => {
       img.classList.toggle("active", i === index);
-      dots[i].classList.toggle("active", i === index);
     });
   }
 
@@ -32,11 +14,52 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(current);
   }
 
-  // Começa mostrando a primeira imagem
+  function prevSlide() {
+    current = (current - 1 + images.length) % images.length;
+    showSlide(current);
+  }
+
   showSlide(current);
 
-  // Troca a cada 4 segundos
-  setInterval(nextSlide, 4000);
+  let slideInterval = setInterval(nextSlide, 4000);
+
+  const btnPrev = document.querySelector(".arrow-left");
+  const btnNext = document.querySelector(".arrow-right");
+
+  btnPrev.addEventListener("click", () => {
+    prevSlide();
+    resetInterval();
+  });
+
+  btnNext.addEventListener("click", () => {
+    nextSlide();
+    resetInterval();
+  });
+
+  function resetInterval() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 4000);
+  }
+
+  // FAQ CARDS: Toggle do conteúdo ao clicar no título
+  const faqCards = document.querySelectorAll(".faq-card");
+
+  faqCards.forEach(card => {
+    const title = card.querySelector("h3");
+    const content = card.querySelector("p");
+
+    content.style.display = "none"; // inicializa escondido
+    title.style.cursor = "pointer";
+
+    title.addEventListener("click", () => {
+      if (content.style.display === "none") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    });
+  });
+});
 
   // Botão voltar ao topo (mantém seu código)
   const scrollTopBtn = document.getElementById("scrollTopBtn");
@@ -48,4 +71,3 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
-});

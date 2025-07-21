@@ -9,8 +9,10 @@ header {
   background: #0044ff;
   display: flex;
   align-items: center;
-  justify-content: center;  /* centraliza horizontalmente todo o conteúdo */
-  gap: 40px;                /* espaço entre logo e menu */
+  justify-content: center;
+  /* centraliza horizontalmente todo o conteúdo */
+  gap: 40px;
+  /* espaço entre logo e menu */
   padding: 10px 30px;
   position: fixed;
   width: 100%;
@@ -48,6 +50,7 @@ nav a {
 }
 
 .banner {
+  position: relative; /* para posicionar setas relativas ao banner */
   margin-top: 120px;
   height: 400px;
   display: flex;
@@ -64,16 +67,14 @@ nav a {
 }
 
 .slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* ou cover, dependendo do efeito desejado */
-  display: block;
-  margin: 0 auto;
   opacity: 0;
-  transition: opacity 0.8s ease;
+  transition: opacity 0.5s ease;
   z-index: 0;
 }
 
@@ -82,36 +83,36 @@ nav a {
   z-index: 1;
 }
 
-.dots {
+/* Setas */
+.arrow-left,
+.arrow-right {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
   z-index: 10;
 }
 
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1.5px solid #fff;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+/* Aqui você controla a distância da seta da imagem */
+.arrow-left {
+  left: 5px;  /* menor valor = mais perto da imagem */
 }
 
-.dot.active {
-  background-color: #00ffae;
-  transform: scale(1.1);
-  border-color: #00ffae;
+.arrow-right {
+  right: 5px;
 }
 
-.solucoes {
-  padding: 40px 20px;
+.solucoes h2 {
   text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px; /* reduzindo o espaço entre seções */
+  color: #fff; /* branco para contrastar com fundo azul */
+  font-weight: 700;
 }
 
 .cards {
@@ -127,19 +128,38 @@ nav a {
   padding: 20px;
   width: 260px;
   text-align: center;
-}
 
-.card h3 {
-  color: #0044ff;
-}
-
-.card p {
-  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 360px;
+  box-sizing: border-box;
 }
 
 .card img {
   height: 60px;
   margin-bottom: 10px;
+  object-fit: contain;
+  width: auto;
+}
+
+.card h3 {
+  color: #0044ff;
+  font-size: 18px;
+  /* texto um pouco menor */
+  margin: 10px 0;
+  min-height: 50px;
+  font-weight: 700;
+}
+
+.card p {
+  color: #000;
+  font-size: 13px;
+  /* texto um pouco menor */
+  flex-grow: 1;
+  margin: 10px 0 20px 0;
+  line-height: 1.4;
 }
 
 .card a {
@@ -150,11 +170,17 @@ nav a {
   font-weight: bold;
   border-radius: 6px;
   text-decoration: none;
-  margin-top: 10px;
+  align-self: center;
+  transition: background-color 0.3s ease;
 }
 
+.card a:hover {
+  background: #00cc8f;
+}
+
+
 .faq {
-  padding: 60px 20px;
+  padding-top: 40px; /* reduz o “lazo” grande */
   background-color: #0044ff;
   display: flex;
   justify-content: center;
@@ -164,31 +190,17 @@ nav a {
 
 .faq h2 {
   font-size: 28px;
-  color: #0044ff;
+  color: #ffffff; /* Antes estava #0044ff */
   margin-bottom: 10px;
   text-align: center;
 }
 
 .faq p {
   font-size: 16px;
-  color: #0044ff;
+  color: #ffffff; /* Antes estava #0044ff */
   margin-bottom: 30px;
   text-align: center;
   max-width: 700px;
-}
-
-.accordion-container {
-  width: 100%;
-  max-width: 700px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.accordion-item {
-  background-color: #0044ff;
-  border-radius: 12px;
-  overflow: hidden;
 }
 
 .accordion-title {
@@ -198,29 +210,19 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #0044ff;
+  color: #ffffff; /* Antes estava #0044ff */
   cursor: pointer;
   text-align: left;
 }
 
 .accordion-title::after {
-  content: "\002B"; /* + */
-  font-size: 18px;
-  font-weight: bold;
-  color: #0044ff;
-  border: 1px solid #0044ff;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 12px;
-  transition: transform 0.3s ease;
+  color: #ffffff; /* Antes estava #0044ff */
+  border: 1px solid #ffffff; /* Antes estava #0044ff */
 }
 
 .accordion-item.open .accordion-title::after {
-  content: "\2212"; /* − */
+  content: "\2212";
+  /* − */
 }
 
 .accordion-content {
@@ -352,6 +354,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+
   .cards,
   .footer-cols,
   .form-section {
@@ -377,7 +380,7 @@ footer {
 .faq-card {
   background: #ffffff;
   color: #0044ff;
-;
+  ;
   border-radius: 12px;
   padding: 20px;
   width: 280px;
@@ -400,6 +403,7 @@ footer {
   color: #333;
   line-height: 1.4;
 }
+
 .whatsapp-button {
   position: fixed;
   bottom: 80px;
