@@ -1,0 +1,366 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0044ff;
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  background: #0044ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  max-width: 140px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-acessar {
+  background: #00ffae;
+  color: #0044ff;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.banner {
+  margin-top: 80px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+}
+
+.slider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+.solucoes {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+}
+
+.card h3 {
+  color: #0044ff;
+}
+
+.card p {
+  color: #000;
+}
+
+.card img {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  background: #00ffae;
+  padding: 8px 16px;
+  color: #0044ff;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.faq {
+  padding: 60px 20px;
+  background-color: #0044ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faq h2 {
+  font-size: 28px;
+  color: #0044ff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.faq p {
+  font-size: 16px;
+  color: #0044ff;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 700px;
+}
+
+.accordion-container {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accordion-item {
+  background-color: #0044ff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.accordion-title {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0044ff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordion-title::after {
+  content: "\002B"; /* + */
+  font-size: 18px;
+  font-weight: bold;
+  color: #0044ff;
+  border: 1px solid #0044ff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.open .accordion-title::after {
+  content: "\2212"; /* − */
+}
+
+.accordion-content {
+  display: none;
+  padding: 20px;
+  background-color: #0044ff;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.accordion-item.open .accordion-content {
+  display: block;
+}
+
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 30px;
+  flex-wrap: wrap;
+  background: #0044ff;
+}
+
+.form-section img {
+  max-width: 600px;
+  height: auto;
+}
+
+.form-text {
+  max-width: 350px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.formulario-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  color: #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form input,
+form button,
+form label {
+  font-family: 'Poppins', sans-serif;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #0052cc;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+footer {
+  background: #0033cc;
+  padding: 40px 20px;
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-cols div {
+  flex: 1;
+  min-width: 180px;
+  margin: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.rodape-final {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.scroll-top,
+.whatsapp-button img {
+  position: fixed;
+  z-index: 1000;
+}
+
+.scroll-top {
+  bottom: 20px;
+  right: 20px;
+  background: #00ffae;
+  color: #0044ff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: none;
+}
+
+.whatsapp-button {
+  bottom: 80px;
+  right: 20px;
+}
+
+.whatsapp-button img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .cards,
+  .footer-cols,
+  .form-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-text {
+    text-align: center;
+  }
+}
+
+.faq-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-card {
+  background: #ffffff;
+  color: #0044ff;
+;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  text-align: left;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+}
+
+.faq-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.faq-card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+.whatsapp-button {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 1000;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
