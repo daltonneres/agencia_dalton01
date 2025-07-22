@@ -132,6 +132,12 @@ nav a {
   font-weight: 700;
 }
 
+.solucoes {
+  background-color: #0044ff; /* mesmo azul do site */
+  padding: 60px 20px; /* espaçamento interno */
+}
+
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -344,7 +350,7 @@ footer a:hover {
 .scroll-top {
   bottom: 20px;
   right: 20px;
-  background: #00ffae;
+  background: #ffffff;
   color: #0044ff;
   border: none;
   border-radius: 50%;
@@ -874,3 +880,12 @@ body {
   font-size: 1rem;
 }
 
+body.pagina-azul {
+  background-color: #0044ff;
+  color: #fff;
+}
+
+body.pagina-branca {
+  background-color: #fff;
+  color: #333;
+}
