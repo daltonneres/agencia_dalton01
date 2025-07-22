@@ -1,8 +1,8 @@
-# Connect SA - Site Institucional
+# Verifik - Site Institucional
 
 ## Descrição
 
-Este projeto é o site institucional da Connect SA, distribuidor autorizado Serasa Experian, que oferece soluções de consultas, monitoramento e prevenção de fraudes para empresas. O site apresenta um banner com carrossel, seções de soluções, FAQ interativo e um rodapé informativo.
+Este projeto é o site institucional da Verifik, distribuidor autorizado rede OK, que oferece soluções de consultas, monitoramento e prevenção de fraudes para empresas. O site apresenta um banner com carrossel, seções de soluções, FAQ interativo e um rodapé informativo.
 
 ## Funcionalidades principais
 
