@@ -889,3 +889,216 @@ body.pagina-branca {
   background-color: #fff;
   color: #333;
 }
+
+.empresa-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  color: #333;
+  text-align: left; /* Garante alinhamento à esquerda */
+}
+
+.empresa-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left; /* Alinha conteúdo ao canto esquerdo */
+}
+
+.empresa-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.empresa-container h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #2c3e50;
+}
+
+.empresa-container p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.empresa-container ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.azul {
+  color: #0066cc;
+}
+
+.verde {
+  color: #00aa66;
+}
+
+
+.solucoes {
+  background-color: #dbe5ff; /* azul claro */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.solucoes h2 {
+  font-size: 28px;
+  color: #0047FF;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  align-items: stretch; /* faz todos os cards terem mesma altura */
+}
+
+.card {
+  background: #fff;
+  width: 280px;             /* largura fixa */
+  min-height: 520px;        /* altura mínima para uniformizar */
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;    /* alinha texto à esquerda no card */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* alinha conteúdos à esquerda */
+}
+
+.card img {
+  width: 110px;
+  height: 110px;          /* altura fixa igual à largura */
+  object-fit: contain;    /* mantém proporção da imagem sem cortar */
+  margin-bottom: 16px;
+  align-self: center;
+  display: block;
+}
+
+.card h3 {
+  color: #0047FF;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: #000;
+  width: 100%;
+}
+
+.card ul li::before {
+  content: "+ ";
+  font-weight: bold;
+}
+
+.card .botao {
+  /* mantém o alinhamento ao centro do botão */
+  align-self: center;
+}
+
+.agro-consulta {
+  background: #0050ff;
+  color: #fff;
+  padding: 50px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-agro {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.agro-topo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.agro-img img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+.agro-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.agro-form label {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.agro-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.agro-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #0050ff;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.agro-form button:hover {
+  background-color: #003cb3;
+}
+
+.agro-texto {
+  text-align: center;
+  margin-top: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.agro-texto h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.agro-texto p {
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.agro-grafico {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.agro-grafico img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
