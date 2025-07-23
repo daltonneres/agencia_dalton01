@@ -127,14 +127,18 @@ nav a {
 .solucoes h2 {
   text-align: center;
   font-size: 28px;
-  margin-bottom: 20px; /* reduzindo o espaço entre seções */
-  color: #fff; /* branco para contrastar com fundo azul */
+  margin-bottom: 20px;
+  /* reduzindo o espaço entre seções */
+  color: #fff;
+  /* branco para contrastar com fundo azul */
   font-weight: 700;
 }
 
 .solucoes {
-  background-color: #0044ff; /* mesmo azul do site */
-  padding: 60px 20px; /* espaçamento interno */
+  background-color: #0044ff;
+  /* mesmo azul do site */
+  padding: 60px 20px;
+  /* espaçamento interno */
 }
 
 
@@ -202,7 +206,8 @@ nav a {
 }
 
 .faq {
-  padding-top: 40px; /* reduz o “lazo” grande */
+  padding-top: 40px;
+  /* reduz o “lazo” grande */
   background-color: #0044ff;
   display: flex;
   justify-content: center;
@@ -212,14 +217,16 @@ nav a {
 
 .faq h2 {
   font-size: 28px;
-  color: #ffffff; /* Antes estava #0044ff */
+  color: #ffffff;
+  /* Antes estava #0044ff */
   margin-bottom: 10px;
   text-align: center;
 }
 
 .faq p {
   font-size: 16px;
-  color: #ffffff; /* Antes estava #0044ff */
+  color: #ffffff;
+  /* Antes estava #0044ff */
   margin-bottom: 30px;
   text-align: center;
   max-width: 700px;
@@ -232,14 +239,17 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #ffffff; /* Antes estava #0044ff */
+  color: #ffffff;
+  /* Antes estava #0044ff */
   cursor: pointer;
   text-align: left;
 }
 
 .accordion-title::after {
-  color: #ffffff; /* Antes estava #0044ff */
-  border: 1px solid #ffffff; /* Antes estava #0044ff */
+  color: #ffffff;
+  /* Antes estava #0044ff */
+  border: 1px solid #ffffff;
+  /* Antes estava #0044ff */
 }
 
 .accordion-item.open .accordion-title::after {
@@ -323,11 +333,13 @@ footer {
 
 footer a {
   color: white;
-  text-decoration: none; /* opcional */
+  text-decoration: none;
+  /* opcional */
 }
 
 footer a:hover {
-  color: #00ffae; /* opcional, cor no hover */
+  color: #00ffae;
+  /* opcional, cor no hover */
 }
 
 .social-icons img {
@@ -389,6 +401,7 @@ footer a:hover {
   text-align: left;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  margin-bottom: 60px; /* 👈 Afasta o rodapé */
 }
 
 .faq-card:hover {
@@ -421,6 +434,7 @@ footer a:hover {
   header {
     padding: 0 20px;
   }
+
   .header-horizontal {
     max-width: 1000px;
     padding: 20px 0;
@@ -432,9 +446,11 @@ footer a:hover {
     height: auto;
     padding: 20px;
   }
+
   .header-spacer {
     height: auto;
   }
+
   .header-horizontal {
     flex-direction: column;
     align-items: center;
@@ -575,11 +591,13 @@ body {
 }
 
 .empresa-container h1 .azul {
-  color: #007bff; /* azul moderno */
+  color: #007bff;
+  /* azul moderno */
 }
 
 .empresa-container h1 .verde {
-  color: #2ecc71; /* verde vibrante */
+  color: #2ecc71;
+  /* verde vibrante */
 }
 
 .empresa-container p {
@@ -620,7 +638,8 @@ body {
 }
 
 .caixa {
-  background-color: #007bff; /* azul vibrante */
+  background-color: #007bff;
+  /* azul vibrante */
   color: #fff;
   padding: 30px 20px;
   flex: 1 1 250px;
@@ -628,7 +647,7 @@ body {
   border-radius: 8px;
   font-weight: 500;
   font-size: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -658,15 +677,17 @@ body {
 }
 
 .caixa-verde {
-  background-color: #26cf6ccc; /* verde vibrante */
-  color: #007bff; /* azul */
+  background-color: #26cf6ccc;
+  /* verde vibrante */
+  color: #007bff;
+  /* azul */
   padding: 30px 20px;
   flex: 1 1 200px;
   max-width: 250px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -683,11 +704,13 @@ body {
 }
 
 .titulo-conectados .azul {
-  color: #007bff; /* azul */
+  color: #007bff;
+  /* azul */
 }
 
 .titulo-conectados .verde {
-  color: #2ecc71; /* verde */
+  color: #2ecc71;
+  /* verde */
 }
 
 .caixas-conectados {
@@ -701,8 +724,10 @@ body {
 }
 
 .caixa-verde {
-  background-color: #27de73cb; /* verde vibrante */
-  color: #007bff; /* azul */
+  background-color: #27de73cb;
+  /* verde vibrante */
+  color: #007bff;
+  /* azul */
   padding: 30px 25px;
   flex: 1 1 250px;
   max-width: 300px;
@@ -740,13 +765,15 @@ body {
 }
 
 .diferenciais-franquias {
-  background-color: #d4f0d4; /* verde claro */
+  background-color: #d4f0d4;
+  /* verde claro */
   padding: 60px 20px;
   text-align: center;
 }
 
 .diferenciais-franquias h2 {
-  color: #003366; /* azul escuro */
+  color: #003366;
+  /* azul escuro */
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
@@ -768,7 +795,7 @@ body {
   padding: 20px;
   flex: 1 1 160px;
   max-width: 180px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   cursor: default;
   display: flex;
@@ -782,7 +809,8 @@ body {
 }
 
 .item-diferencial p {
-  color: white; /* azul escuro */
+  color: white;
+  /* azul escuro */
   font-weight: 600;
   font-size: 1.1rem;
   margin: 0;
@@ -812,7 +840,8 @@ body {
 }
 
 .seguranca-gestao h2 {
-  color: #003366; /* azul */
+  color: #003366;
+  /* azul */
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -821,8 +850,10 @@ body {
 }
 
 .btn-conheca {
-  background-color: #00ffae; /* verde */
-  color: #003366; /* azul */
+  background-color: #00ffae;
+  /* verde */
+  color: #003366;
+  /* azul */
   font-weight: 700;
   font-size: 1.1rem;
   border: none;
@@ -833,19 +864,24 @@ body {
 }
 
 .btn-conheca:hover {
-  background-color: #00cc8f; /* verde escuro no hover */
+  background-color: #00cc8f;
+  /* verde escuro no hover */
 }
 
 .tira-azul {
-  background-color: #0044ff; /* azul */
-  padding: 15px 20px; /* diminuiu de 30px para 15px */
+  background-color: #0044ff;
+  /* azul */
+  padding: 15px 20px;
+  /* diminuiu de 30px para 15px */
   display: flex;
   justify-content: flex-start;
 }
 
 .contato-box {
-  background-color: #00ffae; /* verde */
-  color: #0044ff; /* azul */
+  background-color: #00ffae;
+  /* verde */
+  color: #0044ff;
+  /* azul */
   padding: 20px 30px;
   border-radius: 8px;
   max-width: 320px;
@@ -873,7 +909,8 @@ body {
 .footer-preto {
   background-color: #000;
   color: #fff;
-  padding: 10px 20px; /* diminuiu de 20px para 10px */
+  padding: 10px 20px;
+  /* diminuiu de 20px para 10px */
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -894,13 +931,15 @@ body.pagina-branca {
   background-color: #f9f9f9;
   padding: 40px 20px;
   color: #333;
-  text-align: left; /* Garante alinhamento à esquerda */
+  text-align: left;
+  /* Garante alinhamento à esquerda */
 }
 
 .empresa-container {
   max-width: 900px;
   margin: 0 auto;
-  text-align: left; /* Alinha conteúdo ao canto esquerdo */
+  text-align: left;
+  /* Alinha conteúdo ao canto esquerdo */
 }
 
 .empresa-container h1 {
@@ -934,7 +973,8 @@ body.pagina-branca {
 
 
 .solucoes {
-  background-color: #dbe5ff; /* azul claro */
+  background-color: #dbe5ff;
+  /* azul claro */
   padding: 40px 20px;
   text-align: center;
 }
@@ -950,30 +990,37 @@ body.pagina-branca {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  align-items: stretch; /* faz todos os cards terem mesma altura */
+  align-items: stretch;
+  /* faz todos os cards terem mesma altura */
 }
 
 .card {
   background: #fff;
-  width: 280px;             /* largura fixa */
-  min-height: 520px;        /* altura mínima para uniformizar */
+  width: 280px;
+  /* largura fixa */
+  min-height: 520px;
+  /* altura mínima para uniformizar */
   border-radius: 16px;
   padding: 24px 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: left;    /* alinha texto à esquerda no card */
+  text-align: left;
+  /* alinha texto à esquerda no card */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;  /* alinha conteúdos à esquerda */
+  align-items: flex-start;
+  /* alinha conteúdos à esquerda */
 }
 
 .card img {
   width: 110px;
-  height: 110px;          /* altura fixa igual à largura */
-  object-fit: contain;    /* mantém proporção da imagem sem cortar */
+  height: 110px;
+  /* altura fixa igual à largura */
+  object-fit: contain;
+  /* mantém proporção da imagem sem cortar */
   margin-bottom: 16px;
   align-self: center;
   display: block;
@@ -1006,99 +1053,95 @@ body.pagina-branca {
   align-self: center;
 }
 
-.agro-consulta {
-  background: #0050ff;
-  color: #fff;
-  padding: 50px 20px;
+.hero-agro {
+  background-color: #0044ff;
+  color: white;
+  padding: 60px 20px;
   font-family: 'Poppins', sans-serif;
 }
 
 .container-agro {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.agro-topo {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.agro-img img {
-  max-width: 300px;
-  border-radius: 12px;
+.agro-left {
+  flex: 1 1 500px;
+  max-width: 600px;
 }
 
-.agro-form {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  max-width: 400px;
-  width: 100%;
-  color: #000;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+.agro-left .agro-img {
+  width: 400px;
+  margin-bottom: 100px;
 }
 
-.agro-form label {
-  display: block;
-  margin-top: 12px;
+.agro-left h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.agro-left p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.agro-left small {
   font-size: 14px;
-  font-weight: 500;
+  display: block;
+  margin-top: 10px;
 }
 
-.agro-form input {
+.form-agro {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-agro label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.form-agro input {
   width: 100%;
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-.agro-form button {
-  margin-top: 20px;
-  padding: 12px;
-  background-color: #0050ff;
-  color: white;
-  border: none;
+.form-agro button {
   width: 100%;
+  background: #00e1ff;
+  color: black;
   font-weight: bold;
+  border: none;
+  padding: 12px;
   border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.agro-form button:hover {
-  background-color: #003cb3;
-}
-
-.agro-texto {
-  text-align: center;
-  margin-top: 50px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.agro-texto h2 {
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.agro-texto p {
-  font-size: 14px;
-  color: #e0e0e0;
-}
-
-.agro-grafico {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.agro-grafico img {
+.imagem-centralizada {
   width: 100%;
-  max-width: 1000px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px; /* Esse aqui você vai adicionar */
+}
+
+.imagem-centralizada img {
+  max-width: 900px; /* ou o tamanho que quiser */
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* se quiser cantos levemente arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* opcional, pra destacar */
 }
