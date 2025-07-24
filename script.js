@@ -43,23 +43,28 @@ dots.forEach((dot, idx) => {
 showSlide(0);
 startSlideShow();
 
-/* -------------------- */
-/* Seu código FAQ e botão voltar ao topo aqui, sem alterações */
 const faqCards = document.querySelectorAll(".faq-card");
 
-faqCards.forEach(card => {
+faqCards.forEach((card) => {
   const title = card.querySelector("h3");
   const content = card.querySelector("p");
 
-  content.style.display = "none"; // inicializa escondido
+  content.style.display = "none"; // Inicialmente esconde o conteúdo
+
   title.style.cursor = "pointer";
 
   title.addEventListener("click", () => {
-    if (content.style.display === "none") {
-      content.style.display = "block";
-    } else {
-      content.style.display = "none";
-    }
+    // Fecha todas as outras perguntas
+    faqCards.forEach((otherCard) => {
+      const otherContent = otherCard.querySelector("p");
+      if (otherCard !== card) {
+        otherContent.style.display = "none";
+      }
+    });
+
+    // Alterna visibilidade da pergunta atual
+    content.style.display =
+      content.style.display === "none" ? "block" : "none";
   });
 });
 

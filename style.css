@@ -6,9 +6,9 @@ body {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: unset;
+  left: unset;
   width: 100%;
   height: 110px;
   background: #0044ff;
@@ -21,7 +21,7 @@ header {
 }
 
 .header-spacer {
-  height: 110px;
+  height: auto;
 }
 
 /* Container com logo e menu lado a lado */
@@ -1144,4 +1144,14 @@ body.pagina-branca {
   height: auto;
   border-radius: 8px; /* se quiser cantos levemente arredondados */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* opcional, pra destacar */
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
