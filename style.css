@@ -135,6 +135,7 @@ nav a {
 }
 
 .solucoes {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,18 +145,22 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* espaço entre cards */
+  gap: 20px;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
+  /* <-- garante centralização no container */
 }
 
 .card {
-  flex: 1 1 300px; /* tamanho mínimo e flexível */
+  flex: 1 1 300px;
+  /* tamanho mínimo e flexível */
   max-width: 320px;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .card img {
@@ -395,7 +400,8 @@ footer a:hover {
   text-align: left;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  margin-bottom: 60px; /* 👈 Afasta o rodapé */
+  margin-bottom: 60px;
+  /* 👈 Afasta o rodapé */
 }
 
 .faq-card:hover {
@@ -1129,18 +1135,23 @@ body.pagina-branca {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  margin-bottom: 40px; /* Esse aqui você vai adicionar */
+  margin-bottom: 40px;
+  /* Esse aqui você vai adicionar */
 }
 
 .imagem-centralizada img {
-  max-width: 900px; /* ou o tamanho que quiser */
+  max-width: 900px;
+  /* ou o tamanho que quiser */
   width: 100%;
   height: auto;
-  border-radius: 8px; /* se quiser cantos levemente arredondados */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* opcional, pra destacar */
+  border-radius: 8px;
+  /* se quiser cantos levemente arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* opcional, pra destacar */
 }
 
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
