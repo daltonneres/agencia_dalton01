@@ -11,7 +11,7 @@ header {
   left: unset;
   width: 100%;
   height: 150px;
-  background: #0044ff;
+  background: #000000;
   z-index: 99999;
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@ header {
 
 /* Logo grande */
 .logo {
-  max-width: 300px;
+  max-width: 100px;
   height: auto;
 }
 
@@ -314,42 +314,71 @@ form button {
 }
 
 footer {
-  background: #0033cc;
-  padding: 40px 20px;
+  background: #000; /* preto */
+  color: #fff;
+  padding: 50px 20px;
 }
 
 .footer-cols {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  gap: 40px;
 }
 
 .footer-cols div {
-  flex: 1;
-  min-width: 180px;
-  margin: 10px;
+  flex: 1 1 220px;
+  min-width: 200px;
 }
 
-footer a {
-  color: white;
+.footer-cols h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #00e1ff; /* ciano da logo */
+}
+
+.footer-cols ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-cols li {
+  margin: 8px 0;
+}
+
+.footer-cols a {
+  color: #fff;
   text-decoration: none;
-  /* opcional */
+  transition: color 0.3s;
 }
 
-footer a:hover {
-  color: #00ffae;
-  /* opcional, cor no hover */
+.footer-cols a:hover {
+  color: #00e1ff;
+}
+
+.social-icons {
+  margin-top: 15px;
 }
 
 .social-icons img {
   width: 30px;
   margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
 }
 
 .rodape-final {
   text-align: center;
-  padding-top: 20px;
   font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 15px;
 }
 
 .scroll-top,
@@ -361,8 +390,8 @@ footer a:hover {
 .scroll-top {
   bottom: 20px;
   right: 20px;
-  background: #ffffff;
-  color: #0044ff;
+  background: #000000;
+  color: #ffffff;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -1159,4 +1188,45 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Dropdown Serviços */
+nav ul li {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #000;
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 220px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background: #00e1ff;
+  color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
