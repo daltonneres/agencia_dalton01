@@ -19,32 +19,32 @@
         <img src="logo verifik.png" alt="Logo Verifik" title="Logo Verifik" class="logo" />
       </a>
       <nav>
-                <ul>
-                    <li><a href="#" class="btn-acessar">VendaCerta</a></li>
+        <ul>
+          <li><a href="#" class="btn-acessar">VendaCerta</a></li>
 
-                    <!-- Dropdown Serviços -->
-                    <li class="dropdown">
-                        <a href="#">Serviços ▾</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="index.html#relatorio-basico">Relatório Básico</a></li>
-                            <li><a href="index.html#relatorio-avancado">Relatório Avançado</a></li>
-                            <li><a href="index.html#recuperacao-credito">Recuperação de Crédito</a></li>
-                            <li><a href="index.html#ok-cheque">OK Cheque</a></li>
-                            <li><a href="index.html#ok-localiza">OK Localiza</a></li>
-                            <li><a href="index.html#consulta-traz">O que a consulta traz?</a></li>
-                            <li><a href="index.html#faturamento-presumido">Faturamento Presumido</a></li>
-                            <li><a href="index.html#monitoramento-serasa">Monitoramento Serasa</a></li>
-                            <li><a href="index.html#me-avise-serasa">Me Avise Serasa</a></li>
-                            <li><a href="index.html#negociacao-devedores">Negociação de Devedores</a></li>
-                        </ul>
-                    </li>
+          <!-- Dropdown Serviços -->
+          <li class="dropdown">
+            <a href="#">Serviços ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#relatorio-basico">Relatório Básico</a></li>
+              <li><a href="index.html#relatorio-avancado">Relatório Avançado</a></li>
+              <li><a href="index.html#recuperacao-credito">Recuperação de Crédito</a></li>
+              <li><a href="index.html#ok-cheque">OK Cheque</a></li>
+              <li><a href="index.html#ok-localiza">OK Localiza</a></li>
+              <li><a href="index.html#consulta-traz">O que a consulta traz?</a></li>
+              <li><a href="index.html#faturamento-presumido">Faturamento Presumido</a></li>
+              <li><a href="index.html#monitoramento-serasa">Monitoramento Serasa</a></li>
+              <li><a href="index.html#me-avise-serasa">Me Avise Serasa</a></li>
+              <li><a href="index.html#negociacao-devedores">Negociação de Devedores</a></li>
+            </ul>
+          </li>
 
-                    <li><a href="empresa.html">A Empresa</a></li>
-                    <li><a href="solucoes.html">Soluções</a></li>
-                    <li><a href="#">2ª Via de Boleto</a></li>
-                    <li><a href="https://share.google/15lLZtasLEXeYLxlE">Atendimento</a></li>
-                    <li><a href="https://app.checkok.com.br/entrar" class="btn-acessar">Acessar</a></li>
-                </ul>
+          <li><a href="empresa.html">A Empresa</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="#">2ª Via de Boleto</a></li>
+          <li><a href="https://share.google/15lLZtasLEXeYLxlE">Atendimento</a></li>
+          <li><a href="https://app.checkok.com.br/entrar" class="btn-acessar">Acessar</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -62,6 +62,111 @@
         <span class="dot active"></span>
         <span class="dot"></span>
         <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Container das consultas -->
+  <section id="consultas" class="consultas-container">
+
+    <!-- Relatório Básico -->
+    <div id="relatorio-basico" class="consulta-card destaque">
+      <div class="consulta-info">
+        <h3>Relatório Básico</h3>
+        <p>Simule uma consulta de crédito rápida:</p>
+        <form class="demo-form">
+          <label for="cpf-basico">CPF ou CNPJ:</label>
+          <input type="text" id="cpf-basico" placeholder="Digite o CPF ou CNPJ">
+          <button type="button" onclick="demoRelatorio('básico')">Consultar</button>
+        </form>
+        <div class="resultado-demo" id="resultado-basico"></div>
+      </div>
+    </div>
+
+    <!-- Relatório Avançado -->
+    <div id="relatorio-avancado" class="consulta-card destaque">
+      <div class="consulta-info">
+        <h3>Relatório Avançado</h3>
+        <p>Simule uma consulta detalhada:</p>
+        <form class="demo-form">
+          <label for="cpf-avancado">CPF ou CNPJ:</label>
+          <input type="text" id="cpf-avancado" placeholder="Digite o CPF ou CNPJ">
+          <button type="button" onclick="demoRelatorio('avançado')">Consultar</button>
+        </form>
+        <div class="resultado-demo" id="resultado-avancado"></div>
+      </div>
+    </div>
+
+
+    <!-- Recuperação de Crédito -->
+    <div id="recuperacao-credito" class="consulta-card">
+      <div class="icon-check">✔</div>
+      <div class="consulta-info">
+        <h3>Recuperação de Crédito</h3>
+        <p>Ferramenta para auxiliar na recuperação de valores em aberto de clientes inadimplentes.</p>
+      </div>
+    </div>
+
+    <!-- OK Cheque -->
+    <div id="ok-cheque" class="consulta-card">
+      <div class="icon-check">✔</div>
+      <div class="consulta-info">
+        <h3>OK Cheque</h3>
+        <p>Validação rápida de cheques para evitar fraudes e inadimplência.</p>
+      </div>
+    </div>
+
+    <!-- OK Localiza -->
+    <div id="ok-localiza" class="consulta-card">
+      <div class="icon-check">✔</div>
+      <div class="consulta-info">
+        <h3>OK Localiza</h3>
+        <p>Encontre informações atualizadas de pessoas físicas e jurídicas.</p>
+      </div>
+    </div>
+
+    <!-- O que a consulta traz -->
+    <div id="consulta-traz" class="consulta-card">
+      <div class="icon-check">✔</div>
+      <div class="consulta-info">
+        <h3>O que a consulta traz?</h3>
+        <p>Resumo das informações fornecidas em cada consulta de crédito.</p>
+      </div>
+    </div>
+
+    <!-- Faturamento Presumido -->
+    <div id="faturamento-presumido" class="consulta-card">
+      <div class="icon-check">✔</div>
+      <div class="consulta-info">
+        <h3>Faturamento Presumido</h3>
+        <p>Estimativa de faturamento para apoiar decisões de concessão de crédito.</p>
+      </div>
+    </div>
+
+    <!-- Monitoramento Serasa -->
+    <div id="monitoramento-serasa" class="consulta-card">
+      <div class="icon-check">✔</div>
+      <div class="consulta-info">
+        <h3>Monitoramento Serasa</h3>
+        <p>Monitore sua carteira de clientes.</p>
+      </div>
+    </div>
+
+    <!-- Me Avise Serasa -->
+    <div id="me-avise-serasa" class="consulta-card">
+      <div class="icon-check">✔</div>
+      <div class="consulta-info">
+        <h3>Me Avise Serasa</h3>
+        <p>Monitore seu CNPJ e de seus sócios.</p>
+      </div>
+    </div>
+
+    <!-- Negociação de Devedores -->
+    <div id="negociacao-devedores" class="consulta-card">
+      <div class="icon-check">✔</div>
+      <div class="consulta-info">
+        <h3>Negociação de Devedores</h3>
+        <p>Negocie com devedores de forma prática.</p>
       </div>
     </div>
   </section>
@@ -221,7 +326,8 @@
             <div>
               <h4>Institucional</h4>
               <ul>
-                <a href="index.html">Página Inicial</a> | <a href="empresa.html">Sobre a Verifik</a> | <a href="mailto:verifik@verifik.com.br">Trabalhe Conosco</a>
+                <a href="index.html">Página Inicial</a> | <a href="empresa.html">Sobre a Verifik</a> | <a
+                  href="mailto:verifik@verifik.com.br">Trabalhe Conosco</a>
               </ul>
             </div>
 
@@ -229,7 +335,8 @@
             <div>
               <h4>Atendimento</h4>
               <ul>
-                <a href="https://www.redeok.site/contato">Fale Conosco</a> | <a href="#">2ª Via de Boleto</a> | <a href="https://maps.app.goo.gl/Pt7wGVgUMw9mJD6t7">Localização</a>
+                <a href="https://www.redeok.site/contato">Fale Conosco</a> | <a href="#">2ª Via de Boleto</a> | <a
+                  href="https://maps.app.goo.gl/Pt7wGVgUMw9mJD6t7">Localização</a>
             </div>
 
             <!-- Segurança -->

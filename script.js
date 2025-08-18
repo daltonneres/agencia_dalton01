@@ -95,3 +95,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
   elementsToAnimate.forEach(el => observer.observe(el));
 });
+
+function demoRelatorio(tipo) {
+  let inputId = tipo === "básico" ? "cpf-basico" : "cpf-avancado";
+  let resultId = tipo === "básico" ? "resultado-basico" : "resultado-avancado";
+
+  let valor = document.getElementById(inputId).value.trim();
+  let resultado = document.getElementById(resultId);
+
+  if (valor === "") {
+    resultado.innerHTML = "⚠️ Digite um CPF ou CNPJ para simular.";
+    resultado.style.display = "block";
+    return;
+  }
+
+  if (tipo === "básico") {
+    resultado.innerHTML = `
+      <strong>Resultado da Simulação:</strong><br>
+      ✅ Cadastro encontrado<br>
+      ✅ Score: 720<br>
+      ✅ Nenhum protesto<br>
+      ⚠️ 1 negativação ativa
+    `;
+  } else {
+    resultado.innerHTML = `
+      <strong>Resultado da Simulação:</strong><br>
+      ✅ Cadastro encontrado<br>
+      ✅ Score: 650<br>
+      ⚠️ 2 protestos ativos<br>
+      ⚠️ 3 negativação(ões)<br>
+      📊 Limite de crédito sugerido: R$ 15.000<br>
+      💰 Faturamento presumido: R$ 80.000/mês
+    `;
+  }
+
+  resultado.style.display = "block";
+}
