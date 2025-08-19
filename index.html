@@ -29,13 +29,14 @@
               <li><a href="index.html#relatorio-basico">Relatório Básico</a></li>
               <li><a href="index.html#relatorio-avancado">Relatório Avançado</a></li>
               <li><a href="index.html#recuperacao-credito">Recuperação de Crédito</a></li>
-              <li><a href="index.html#ok-cheque">OK Cheque</a></li>
+              <li><a href="index.html#ok-check">OK Check</a></li>
               <li><a href="index.html#ok-localiza">OK Localiza</a></li>
               <li><a href="index.html#consulta-traz">O que a consulta traz?</a></li>
               <li><a href="index.html#faturamento-presumido">Faturamento Presumido</a></li>
               <li><a href="index.html#monitoramento-serasa">Monitoramento Serasa</a></li>
               <li><a href="index.html#me-avise-serasa">Me Avise Serasa</a></li>
               <li><a href="index.html#negociacao-devedores">Negociação de Devedores</a></li>
+              <li><a href="index.html#pix-pre">Pix Pré-Datado</a></li>
             </ul>
           </li>
 
@@ -70,49 +71,38 @@
   <section id="consultas" class="consultas-container">
 
     <!-- Relatório Básico -->
-    <div id="relatorio-basico" class="consulta-card destaque">
+    <div id="relatorio-basico" class="consulta-card">
+      <div class="icon-check">✔</div>
       <div class="consulta-info">
         <h3>Relatório Básico</h3>
-        <p>Simule uma consulta de crédito rápida:</p>
-        <form class="demo-form">
-          <label for="cpf-basico">CPF ou CNPJ:</label>
-          <input type="text" id="cpf-basico" placeholder="Digite o CPF ou CNPJ">
-          <button type="button" onclick="demoRelatorio('básico')">Consultar</button>
-        </form>
-        <div class="resultado-demo" id="resultado-basico"></div>
+        <p>Para vender de menor valor ou clientes recorrentes.</p>
       </div>
     </div>
 
     <!-- Relatório Avançado -->
-    <div id="relatorio-avancado" class="consulta-card destaque">
+    <div id="relatorio-avançado" class="consulta-card">
+      <div class="icon-check">✔</div>
       <div class="consulta-info">
         <h3>Relatório Avançado</h3>
-        <p>Simule uma consulta detalhada:</p>
-        <form class="demo-form">
-          <label for="cpf-avancado">CPF ou CNPJ:</label>
-          <input type="text" id="cpf-avancado" placeholder="Digite o CPF ou CNPJ">
-          <button type="button" onclick="demoRelatorio('avançado')">Consultar</button>
-        </form>
-        <div class="resultado-demo" id="resultado-avancado"></div>
+        <p>Para vendas de maior valor e negociações de risco.</p>
       </div>
     </div>
-
 
     <!-- Recuperação de Crédito -->
     <div id="recuperacao-credito" class="consulta-card">
       <div class="icon-check">✔</div>
       <div class="consulta-info">
-        <h3>Recuperação de Crédito</h3>
-        <p>Ferramenta para auxiliar na recuperação de valores em aberto de clientes inadimplentes.</p>
+        <h3>Recomenda Crédito</h3>
+        <p>Saiba qual o valor recomendado para realizar uma nova venda ao seu cliente</p>
       </div>
     </div>
 
-    <!-- OK Cheque -->
-    <div id="ok-cheque" class="consulta-card">
+    <!-- OK Check\ -->
+    <div id="ok-check" class="consulta-card">
       <div class="icon-check">✔</div>
       <div class="consulta-info">
-        <h3>OK Cheque</h3>
-        <p>Validação rápida de cheques para evitar fraudes e inadimplência.</p>
+        <h3>OK Check</h3>
+        <p>Achei-Recheque</p>
       </div>
     </div>
 
@@ -121,7 +111,7 @@
       <div class="icon-check">✔</div>
       <div class="consulta-info">
         <h3>OK Localiza</h3>
-        <p>Encontre informações atualizadas de pessoas físicas e jurídicas.</p>
+        <p>Info Localiza / Busca</p>
       </div>
     </div>
 
@@ -157,7 +147,7 @@
       <div class="icon-check">✔</div>
       <div class="consulta-info">
         <h3>Me Avise Serasa</h3>
-        <p>Monitore seu CNPJ e de seus sócios.</p>
+        <p>Monitore o CNPJ da sua empresa e de seus sócios 24 horas por dia!</p>
       </div>
     </div>
 
@@ -167,6 +157,18 @@
       <div class="consulta-info">
         <h3>Negociação de Devedores</h3>
         <p>Negocie com devedores de forma prática.</p>
+      </div>
+    </div>
+
+    <!-- Pix Pré-datado -->
+    <div id="pix-pre" class="consulta-card">
+      <div class="icon-check">✔</div>
+      <div class="consulta-info">
+        <h3>PIX Pré-datado</h3>
+        <p>O Pix pré-datado funciona como uma alternativa ao boleto: em vez de gerar o documento, é enviada uma
+          notificação ao cliente informando a data em que o valor será debitado da conta. Além de mais prático, o custo
+          é
+          reduzido, apenas R$0,80 por transação.</p>
       </div>
     </div>
   </section>
@@ -249,7 +251,9 @@
       </div>
       <div class="faq-card">
         <h3>PIX Pré-datado</h3>
-        <p>Surgiu para substituir o boleto. R$ 0,80 por PIX (atualmente o boleto custa cerca de R$ 2,00).</p>
+        <p>Pix pré-datado funciona como uma alternativa ao boleto: em vez de gerar o documento, é enviada uma
+          notificação ao cliente informando a data em que o valor será debitado da conta. Além de mais prático, o custo
+          é reduzido, apenas R$0,80 por transação..</p>
       </div>
       <div class="faq-card">
         <h3>Régua de Cobrança</h3>
