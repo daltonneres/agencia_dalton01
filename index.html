@@ -13,6 +13,27 @@
 
 <body>
 
+  <!-- POPUP -->
+<div class="popup-overlay" id="popup">
+  <div class="popup">
+    <span class="close-btn" onclick="fecharPopup()">×</span>
+    <h2>Bem-vindo à Verifik!</h2>
+    <p>Cadastre-se e receba nossas novidades e promoções exclusivas.</p>
+
+    <!-- Formulário -->
+    <form action="https://formsubmit.co/dev.neresdalton@gmail.com" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <button type="submit">Quero receber novidades</button>
+
+      <!-- resposta automática -->
+      <input type="hidden" name="_autoresponse" value="Obrigado por se cadastrar! Em breve enviaremos novidades.">
+      <!-- redirecionamento opcional -->
+      <input type="hidden" name="_next" value="https://seudominio.com/obrigado.html">
+    </form>
+  </div>
+</div>
+
   <header>
     <div class="header-horizontal">
       <a href="index.html">

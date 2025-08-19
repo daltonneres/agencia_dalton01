@@ -96,4 +96,12 @@ document.addEventListener('DOMContentLoaded', () => {
   elementsToAnimate.forEach(el => observer.observe(el));
 });
 
+// Abrir popup automaticamente ao carregar a página
+window.onload = function() {
+  document.getElementById("popup").style.display = "flex";
+}
 
+// Fechar popup
+function fecharPopup() {
+  document.getElementById("popup").style.display = "none";
+}
