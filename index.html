@@ -14,25 +14,25 @@
 <body>
 
   <!-- POPUP -->
-<div class="popup-overlay" id="popup">
-  <div class="popup">
-    <span class="close-btn" onclick="fecharPopup()">×</span>
-    <h2>Bem-vindo à Verifik!</h2>
-    <p>Cadastre-se e receba nossas novidades e promoções exclusivas.</p>
+  <div class="popup-overlay" id="popup">
+    <div class="popup">
+      <span class="close-btn" onclick="fecharPopup()">×</span>
+      <h2>Bem-vindo à Verifik!</h2>
+      <p>Cadastre-se e receba nossas novidades e promoções exclusivas.</p>
 
-    <!-- Formulário -->
-    <form action="https://formsubmit.co/dev.neresdalton@gmail.com" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <button type="submit">Quero receber novidades</button>
+      <!-- Formulário -->
+      <form action="https://formsubmit.co/dev.neresdalton@gmail.com" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <button type="submit">Quero receber novidades</button>
 
-      <!-- resposta automática -->
-      <input type="hidden" name="_autoresponse" value="Obrigado por se cadastrar! Em breve enviaremos novidades.">
-      <!-- redirecionamento opcional -->
-      <input type="hidden" name="_next" value="https://seudominio.com/obrigado.html">
-    </form>
+        <!-- resposta automática -->
+        <input type="hidden" name="_autoresponse" value="Obrigado por se cadastrar! Em breve enviaremos novidades.">
+        <!-- redirecionamento opcional -->
+        <input type="hidden" name="_next" value="https://seudominio.com/obrigado.html">
+      </form>
+    </div>
   </div>
-</div>
 
   <header>
     <div class="header-horizontal">
@@ -41,7 +41,17 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#" class="btn-acessar">VendaCerta</a></li>
+          <li>
+            <a href="#" onclick="mostrarImagem(event)">
+              <img src="venda-certa.png" alt="VendaCerta" class="logo-vendacerta" />
+            </a>
+          </li>
+
+          <!-- Popup escondido -->
+          <div id="popupImg" class="popup-img" onclick="fecharImagem()">
+            <img src="images.jpeg" alt="Imagem Ampliada">
+          </div>
+
 
           <!-- Dropdown Serviços -->
           <li class="dropdown">
@@ -57,7 +67,7 @@
               <li><a href="index.html#monitoramento-serasa">Monitoramento Serasa</a></li>
               <li><a href="index.html#me-avise-serasa">Me Avise Serasa</a></li>
               <li><a href="index.html#negociacao-devedores">Negociação de Devedores</a></li>
-              <li><a href="index.html#pix-pre">Pix Pré-Datado</a></li>
+              <li><a href="index.html#pix-pre">PIX Parcelado com antecipação</a></li>
             </ul>
           </li>
 
@@ -77,11 +87,12 @@
       <a href="agro.html"><img src="banner-two.jpg" alt="Clique Aqui" title="Clique Aqui" class="active" /></a>
       <a href="https://wa.me/554532257420?text=Quero%20negativar%20o%20CPF%20de%20quem%20me%20deve"><img
           src="banner-tres 2.0.png" alt="Clique Aqui" title="Clique Aqui" /></a>
+      <img src="banner-five.jpeg" alt="VendaCerta" title="VendaCerta" /></a>
       <a href="https://wa.me/554532257420?text=Preciso%20de%20agilidade%20nas%20consultas%20e%20negativa%C3%A7%C3%B5es"><img
           src="banner-four.jpg" alt="Clique Aqui" title="Clique Aqui" /></a>
-
       <div class="indicators">
         <span class="dot active"></span>
+        <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
       </div>
@@ -141,7 +152,7 @@
       <div class="icon-check">✔</div>
       <div class="consulta-info">
         <h3>O que a consulta traz?</h3>
-        <p>Resumo das informações fornecidas em cada consulta de crédito.</p>
+        <p>Resumo das informações fornecidas em cada consulta de crédito.</p>
       </div>
     </div>
 
@@ -176,7 +187,7 @@
     <div id="negociacao-devedores" class="consulta-card">
       <div class="icon-check">✔</div>
       <div class="consulta-info">
-        <h3>Negociação de Devedores</h3>
+        <h3>Negativações de Devedores</h3>
         <p>Negocie com devedores de forma prática.</p>
       </div>
     </div>
@@ -185,11 +196,10 @@
     <div id="pix-pre" class="consulta-card">
       <div class="icon-check">✔</div>
       <div class="consulta-info">
-        <h3>PIX Pré-datado</h3>
+        <h3>PIX parcelado com antecipação</h3>
         <p>O Pix pré-datado funciona como uma alternativa ao boleto: em vez de gerar o documento, é enviada uma
           notificação ao cliente informando a data em que o valor será debitado da conta. Além de mais prático, o custo
-          é
-          reduzido, apenas R$0,80 por transação.</p>
+          é reduzido, apenas R$0,80 por transação.</p>
       </div>
     </div>
   </section>
@@ -246,44 +256,6 @@
         <a
           href="https://wa.me/554532257420?text=Quero%20tratar%20sobre%3A%20Seguran%C3%A7a%20para%20vendas%20no%20boleto%20e%20PIX%20parcelado">Contrate
           agora</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="faq animate-on-scroll">
-    <h2>Consulte com a Verifik e negocie com mais segurança.</h2>
-    <p>Reduza a inadimplência e tome decisões mais seguras com informações precisas sobre seus clientes e fornecedores.
-    </p>
-
-    <div class="faq-cards">
-      <div class="faq-card">
-        <h3>Relatório Básico</h3>
-        <p>Consulta simplificada de CPF ou CNPJ com dados cadastrais essenciais para negociações rápidas e valores
-          menores.</p>
-      </div>
-      <div class="faq-card">
-        <h3>Relatório Avançado</h3>
-        <p>Análise detalhada para decisões estratégicas, ideal para negociações com prazos longos ou valores mais altos.
-        </p>
-      </div>
-      <div class="faq-card">
-        <h3>Negativação de Devedores</h3>
-        <p>Recupere dívidas vencidas negativando inadimplentes diretamente na base da Serasa Experian.</p>
-      </div>
-      <div class="faq-card">
-        <h3>PIX Pré-datado</h3>
-        <p>Pix pré-datado funciona como uma alternativa ao boleto: em vez de gerar o documento, é enviada uma
-          notificação ao cliente informando a data em que o valor será debitado da conta. Além de mais prático, o custo
-          é reduzido, apenas R$0,80 por transação..</p>
-      </div>
-      <div class="faq-card">
-        <h3>Régua de Cobrança</h3>
-        <p>Envio automático de notificações aos devedores já negativados, reforçando a cobrança e incentivando o
-          pagamento.</p>
-      </div>
-      <div class="faq-card">
-        <h3>Localiza PF/PJ</h3>
-        <p>Acesse rapidamente dados atualizados de consumidores ou empresas com o Localiza PF/PJ.</p>
       </div>
     </div>
   </section>

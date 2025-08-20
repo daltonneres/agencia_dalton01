@@ -105,3 +105,12 @@ window.onload = function() {
 function fecharPopup() {
   document.getElementById("popup").style.display = "none";
 }
+
+function mostrarImagem(event) {
+  event.preventDefault(); // não recarrega a página
+  document.getElementById("popupImg").style.display = "flex";
+}
+
+function fecharImagem() {
+  document.getElementById("popupImg").style.display = "none";
+}
