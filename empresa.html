@@ -20,7 +20,17 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#" class="btn-acessar">VendaCerta</a></li>
+          <li>
+            <a href="#" onclick="mostrarImagem(event)">
+              <img src="venda-certa.png" alt="VendaCerta" class="logo-vendacerta" />
+            </a>
+          </li>
+
+          <!-- Popup escondido -->
+          <div id="popupImg" class="popup-img" onclick="fecharImagem()">
+            <img src="images.jpeg
+            " alt="Imagem Ampliada">
+          </div>
 
           <!-- Dropdown Serviços -->
           <li class="dropdown">

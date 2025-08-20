@@ -1,7 +1,8 @@
+
 body {
   font-family: 'Poppins', sans-serif;
   background: #000000;
-  color: #fff;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -52,7 +53,7 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -60,7 +61,7 @@ nav a {
 }
 
 .btn-acessar {
-  background: #00ffae;
+  background: #00ffae; /* verde-água */
   color: #000000;
   padding: 10px 18px;
   border-radius: 6px;
@@ -68,6 +69,7 @@ nav a {
   font-weight: bold;
 }
 
+/* ===== Banner ===== */
 .banner {
   position: relative;
   width: 100%;
@@ -121,16 +123,15 @@ nav a {
 }
 
 .dot.active {
-  background-color: rgb(0, 0, 0);
+  background-color: #00e1ff; /* ciano */
 }
 
+/* ===== Soluções ===== */
 .solucoes h2 {
   text-align: center;
   font-size: 28px;
   margin-bottom: 20px;
-  /* reduzindo o espaço entre seções */
-  color: #000000;
-  /* branco para contrastar com fundo azul */
+  color: #00e1ff; /* título com ciano */
   font-weight: 700;
 }
 
@@ -139,8 +140,10 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #000000;
 }
 
+/* Grid de cards genérico */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -149,14 +152,12 @@ nav a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  /* <-- garante centralização no container */
 }
 
 .card {
   flex: 1 1 300px;
-  /* tamanho mínimo e flexível */
   max-width: 320px;
-  background: #000000;
+  background: #111111; /* preto suave */
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -171,18 +172,16 @@ nav a {
 }
 
 .card h3 {
-  color: #000000;
+  color: #ffffff;
   font-size: 18px;
-  /* texto um pouco menor */
   margin: 10px 0;
   min-height: 50px;
   font-weight: 700;
 }
 
 .card p {
-  color: #000;
+  color: #cccccc;
   font-size: 13px;
-  /* texto um pouco menor */
   flex-grow: 1;
   margin: 10px 0 20px 0;
   line-height: 1.4;
@@ -190,7 +189,7 @@ nav a {
 
 .card a {
   display: inline-block;
-  background: #00ffae;
+  background: #00ffae; /* botão verde-água */
   padding: 8px 16px;
   color: #000000;
   font-weight: bold;
@@ -204,9 +203,9 @@ nav a {
   background: #00cc8f;
 }
 
+/* ===== FAQ ===== */
 .faq {
   padding-top: 40px;
-  /* reduz o “lazo” grande */
   background-color: #000000;
   display: flex;
   justify-content: center;
@@ -217,7 +216,6 @@ nav a {
 .faq h2 {
   font-size: 28px;
   color: #ffffff;
-  /* Antes estava #0044ff */
   margin-bottom: 10px;
   text-align: center;
 }
@@ -225,7 +223,6 @@ nav a {
 .faq p {
   font-size: 16px;
   color: #ffffff;
-  /* Antes estava #0044ff */
   margin-bottom: 30px;
   text-align: center;
   max-width: 700px;
@@ -239,23 +236,20 @@ nav a {
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
-  /* Antes estava #0044ff */
   cursor: pointer;
   text-align: left;
 }
 
 .accordion-title::after {
   color: #ffffff;
-  /* Antes estava #0044ff */
   border: 1px solid #ffffff;
-  /* Antes estava #0044ff */
 }
 
 .accordion-item.open .accordion-title::after {
   content: "\2212";
-  /* − */
 }
 
+/* ===== Form & Lead ===== */
 .form-section {
   display: flex;
   align-items: center;
@@ -275,15 +269,16 @@ nav a {
   max-width: 350px;
   font-size: 26px;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .formulario-box {
-  background: white;
+  background: #ffffff;
   padding: 30px;
   border-radius: 12px;
   max-width: 400px;
   width: 100%;
-  color: #000;
+  color: #000000;
 }
 
 form {
@@ -305,18 +300,22 @@ form input {
 }
 
 form button {
-  background: #00ffae;
-  color: rgb(0, 0, 0);
+  background: #00ffae; /* verde-água */
+  color: #000000;
   padding: 10px;
   border: none;
   border-radius: 5px;
   font-weight: bold;
 }
 
+form button:hover {
+  background: #00cc8f;
+}
+
+/* ===== Footer ===== */
 footer {
-  background: #000;
-  /* preto */
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
   padding: 50px 20px;
 }
 
@@ -338,8 +337,7 @@ footer {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #00e1ff;
-  /* ciano da logo */
+  color: #00e1ff; /* ciano da logo */
 }
 
 .footer-cols ul {
@@ -353,7 +351,7 @@ footer {
 }
 
 .footer-cols a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -383,6 +381,7 @@ footer {
   padding-top: 15px;
 }
 
+/* Botões fixos */
 .scroll-top,
 .whatsapp-button img {
   position: fixed;
@@ -392,8 +391,8 @@ footer {
 .scroll-top {
   bottom: 20px;
   right: 20px;
-  background: #000000;
-  color: #ffffff;
+  background: #00ffae; /* botão verde-água */
+  color: #000000;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -412,7 +411,7 @@ footer {
   height: 50px;
 }
 
-
+/* Compat: regra duplicada do botão fixo */
 .whatsapp-button {
   position: fixed;
   bottom: 80px;
@@ -557,12 +556,13 @@ footer {
   }
 }
 
+/* ===== Empresa / Institucional ===== */
 body {
   background-color: #000000;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #ffffff;
 }
 
 .empresa-section {
@@ -585,12 +585,11 @@ body {
 }
 
 .empresa-container h1 .azul {
-  color: #454746;
+  color: #00e1ff; /* ciano */
 }
 
 .empresa-container h1 .verde {
-  color: #2ecc71;
-  /* verde vibrante */
+  color: #00ffae; /* verde-água */
 }
 
 .empresa-container p {
@@ -598,6 +597,7 @@ body {
   line-height: 1.8;
 }
 
+/* Responsivo títulos empresa */
 @media (max-width: 768px) {
   .empresa-container h1 {
     font-size: 2rem;
@@ -615,10 +615,12 @@ body {
   height: auto;
 }
 
+/* ===== Blocos claros ===== */
 .caixas-section {
   padding: 60px 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
+  color: #000000;
 }
 
 .caixas-container {
@@ -632,7 +634,7 @@ body {
 
 .caixa {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
   padding: 30px 20px;
   flex: 1 1 250px;
   max-width: 300px;
@@ -647,10 +649,12 @@ body {
   transform: translateY(-5px);
 }
 
+/* ===== Conectados ===== */
 .conectados-section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .conectados-section h2 {
@@ -670,9 +674,7 @@ body {
 
 .caixa-verde {
   background-color: #000000cc;
-  /* verde vibrante */
   color: #ffffff;
-  /* azul */
   padding: 30px 20px;
   flex: 1 1 200px;
   max-width: 250px;
@@ -696,12 +698,11 @@ body {
 }
 
 .titulo-conectados .azul {
-  color: #454746;
+  color: #00e1ff;
 }
 
 .titulo-conectados .verde {
-  color: #2ecc71;
-  /* verde */
+  color: #00ffae;
 }
 
 .caixas-conectados {
@@ -716,9 +717,7 @@ body {
 
 .caixa-verde {
   background-color: #000000;
-  /* verde vibrante */
   color: #ffffff;
-  /* azul */
   padding: 30px 25px;
   flex: 1 1 250px;
   max-width: 300px;
@@ -739,11 +738,7 @@ body {
   line-height: 1.5;
 }
 
-.caixa-verde:hover {
-  transform: translateY(-5px);
-}
-
-/* Responsividade */
+/* Responsividade conectados */
 @media (max-width: 768px) {
   .caixas-conectados {
     flex-direction: column;
@@ -755,16 +750,16 @@ body {
   }
 }
 
+/* ===== Diferenciais ===== */
 .diferenciais-franquias {
   background-color: #000000a1;
-  /* verde claro */
   padding: 60px 20px;
   text-align: center;
+  color: #ffffff;
 }
 
 .diferenciais-franquias h2 {
   color: #ffffff;
-  /* azul escuro */
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
@@ -800,8 +795,7 @@ body {
 }
 
 .item-diferencial p {
-  color: white;
-  /* azul escuro */
+  color: #ffffff;
   font-weight: 600;
   font-size: 1.1rem;
   margin: 0;
@@ -824,15 +818,16 @@ body {
   }
 }
 
+/* ===== Segurança & Gestão ===== */
 .seguranca-gestao {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 60px 20px;
   text-align: center;
+  color: #000000;
 }
 
 .seguranca-gestao h2 {
-  color: #003366;
-  /* azul */
+  color: #000000;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -841,10 +836,8 @@ body {
 }
 
 .btn-conheca {
-  background-color: #00ffae;
-  /* verde */
-  color: #003366;
-  /* azul */
+  background-color: #00ffae; /* botão verde-água */
+  color: #000000;
   font-weight: 700;
   font-size: 1.1rem;
   border: none;
@@ -856,23 +849,19 @@ body {
 
 .btn-conheca:hover {
   background-color: #00cc8f;
-  /* verde escuro no hover */
 }
 
+/* Tirinha & contato */
 .tira-azul {
   background-color: #000000;
-  /* azul */
   padding: 15px 20px;
-  /* diminuiu de 30px para 15px */
   display: flex;
   justify-content: flex-start;
 }
 
 .contato-box {
   background-color: #ffffff;
-  /* verde */
   color: #000000;
-  /* azul */
   padding: 20px 30px;
   border-radius: 8px;
   max-width: 320px;
@@ -892,45 +881,44 @@ body {
 }
 
 .mini-tira-branca {
-  background-color: #fff;
+  background-color: #ffffff;
   height: 15px;
   width: 100%;
 }
 
 .footer-preto {
-  background-color: #000;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
   padding: 10px 20px;
-  /* diminuiu de 20px para 10px */
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1rem;
 }
 
+/* Páginas com variações */
 body.pagina-azul {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
 }
 
 body.pagina-branca {
-  background-color: #fff;
-  color: #333;
+  background-color: #ffffff;
+  color: #333333;
 }
 
+/* Empresa (variante clara) */
 .empresa-section {
   background-color: #f9f9f9;
   padding: 40px 20px;
-  color: #333;
+  color: #333333;
   text-align: left;
-  /* Garante alinhamento à esquerda */
 }
 
 .empresa-container {
   max-width: 900px;
   margin: 0 auto;
   text-align: left;
-  /* Alinha conteúdo ao canto esquerdo */
 }
 
 .empresa-container h1 {
@@ -941,7 +929,7 @@ body.pagina-branca {
 .empresa-container h2 {
   font-size: 20px;
   margin-top: 30px;
-  color: #2c3e50;
+  color: #00e1ff; /* ciano para subtítulos */
 }
 
 .empresa-container p {
@@ -955,24 +943,23 @@ body.pagina-branca {
 }
 
 .azul {
-  color: #0066cc;
+  color: #00e1ff;
 }
 
 .verde {
-  color: #00aa66;
+  color: #00ffae;
 }
 
-
+/* ===== Cards estilo "container" (variante clara) ===== */
 .solucoes {
   background-color: #000000;
-  /* azul claro */
   padding: 40px 20px;
   text-align: center;
 }
 
 .solucoes h2 {
   font-size: 28px;
-  color: #000000;
+  color: #00e1ff;
   margin-bottom: 40px;
 }
 
@@ -982,43 +969,33 @@ body.pagina-branca {
   justify-content: center;
   gap: 24px;
   align-items: stretch;
-  /* faz todos os cards terem mesma altura */
 }
 
 .card {
-  background: #fff;
+  background: #111111;
   width: 280px;
-  /* largura fixa */
   min-height: 520px;
-  /* altura mínima para uniformizar */
   border-radius: 16px;
   padding: 24px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
-  /* alinha texto à esquerda no card */
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  /* alinha conteúdos à esquerda */
 }
 
 .card img {
   width: 110px;
   height: 110px;
-  /* altura fixa igual à largura */
   object-fit: contain;
-  /* mantém proporção da imagem sem cortar */
   margin-bottom: 16px;
   align-self: center;
   display: block;
 }
 
 .card h3 {
-  color: #000000;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 12px;
@@ -1030,23 +1007,24 @@ body.pagina-branca {
   padding: 0;
   margin: 0 0 20px;
   font-size: 14px;
-  color: #000;
+  color: #cccccc;
   width: 100%;
 }
 
 .card ul li::before {
   content: "+ ";
   font-weight: bold;
+  color: #00e1ff;
 }
 
 .card .botao {
-  /* mantém o alinhamento ao centro do botão */
   align-self: center;
 }
 
+/* ===== Hero Agro ===== */
 .hero-agro {
   background-color: #000000;
-  color: white;
+  color: #ffffff;
   padding: 60px 20px;
   font-family: 'Poppins', sans-serif;
 }
@@ -1088,8 +1066,8 @@ body.pagina-branca {
 }
 
 .form-agro {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
   padding: 20px;
   border-radius: 10px;
   flex: 1 1 300px;
@@ -1112,8 +1090,8 @@ body.pagina-branca {
 
 .form-agro button {
   width: 100%;
-  background: #00e1ff;
-  color: black;
+  background: #00ffae; /* botões em verde-água */
+  color: #000000;
   font-weight: bold;
   border: none;
   padding: 12px;
@@ -1127,18 +1105,14 @@ body.pagina-branca {
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 40px;
-  /* Esse aqui você vai adicionar */
 }
 
 .imagem-centralizada img {
   max-width: 900px;
-  /* ou o tamanho que quiser */
   width: 100%;
   height: auto;
   border-radius: 8px;
-  /* se quiser cantos levemente arredondados */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  /* opcional, pra destacar */
 }
 
 html,
@@ -1152,7 +1126,7 @@ img {
   height: auto;
 }
 
-/* Dropdown Serviços */
+/* ===== Dropdown Serviços ===== */
 nav ul li {
   position: relative;
 }
@@ -1162,7 +1136,7 @@ nav ul li {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #000;
+  background: #000000;
   padding: 10px 0;
   border-radius: 6px;
   min-width: 220px;
@@ -1178,7 +1152,7 @@ nav ul li {
 .dropdown-menu a {
   display: block;
   padding: 10px 15px;
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   text-decoration: none;
   transition: background 0.3s;
@@ -1186,20 +1160,19 @@ nav ul li {
 
 .dropdown-menu a:hover {
   background: #00e1ff;
-  color: #000;
+  color: #000000;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+/* ===== Consultas ===== */
 .consultas-container {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  /* espaço entre os cards */
   max-width: 1000px;
-  /* limite de largura para não ficar esticado */
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -1209,48 +1182,40 @@ nav ul li {
   align-items: flex-start;
   gap: 20px;
   padding: 25px 30px;
-  /* menos padding = card menor */
   border: none;
   border-radius: 12px;
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   min-height: 180px;
-  /* altura mais discreta */
   overflow: hidden;
-
 }
 
 .icon-check {
   font-size: 22px;
-  /* tamanho reduzido */
   color: #000000;
-  background: #00e1ff;
+  background: #00e1ff; /* ícone com ciano */
   border-radius: 6px;
   padding: 8px 10px;
   flex-shrink: 0;
-  /* não deixa encolher */
   align-self: flex-start;
-  /* gruda no topo esquerdo */
 }
-
 
 /* Área do texto */
 .consulta-info {
-    padding: 30px;
-    flex: 1;
+  padding: 30px;
+  flex: 1;
 }
 
 .consulta-info h3 {
   font-size: 18px;
-  /* título um pouco menor */
   color: #000000;
   margin: 0 0 8px 0;
 }
 
 .consulta-info p {
   font-size: 15px;
-  color: #333;
+  color: #333333;
   line-height: 1.5;
   margin: 0;
 }
@@ -1264,7 +1229,7 @@ nav ul li {
 
 .demo-form label {
   font-size: 14px;
-  color: #333;
+  color: #333333;
 }
 
 .demo-form input {
@@ -1274,8 +1239,8 @@ nav ul li {
 }
 
 .demo-form button {
-  background: #0044ff;
-  color: white;
+  background: #00ffae; /* botão verde-água */
+  color: #000000;
   border: none;
   padding: 10px;
   border-radius: 6px;
@@ -1285,7 +1250,7 @@ nav ul li {
 }
 
 .demo-form button:hover {
-  background: #0033cc;
+  background: #00cc8f;
 }
 
 .resultado-demo {
@@ -1293,11 +1258,12 @@ nav ul li {
   padding: 12px;
   border-radius: 6px;
   background: #f4f8ff;
-  color: #333;
+  color: #333333;
   font-size: 14px;
-  display: none; /* só aparece depois */
+  display: none;
 }
 
+/* ===== Popup genérico (lead) ===== */
 /* Fundo escuro */
 .popup-overlay {
   position: fixed;
@@ -1320,6 +1286,7 @@ nav ul li {
   text-align: center;
   position: relative;
   box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+  color: #ffffff;
 }
 
 /* Botão fechar */
@@ -1328,6 +1295,7 @@ nav ul li {
   top: 10px; right: 15px;
   font-size: 20px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 /* Inputs */
@@ -1341,7 +1309,7 @@ nav ul li {
 
 /* Botão */
 .popup button {
-  background: #00ffae;
+  background: #00ffae; /* botão verde-água */
   color: #000000;
   border: none;
   padding: 10px 20px;
@@ -1350,28 +1318,30 @@ nav ul li {
 }
 
 .popup button:hover {
-  background: #00ffae;
+  background: #00cc8f;
 }
 
+/* ===== Itens de navegação especiais ===== */
 .btn-acessar img {
-  height: 40px;   /* altura do botão */
-  width: auto;    /* mantém proporção */
-  display: block; /* evita espaços indesejados */
-}
-
-.logo-vendacerta {
-  height: 40px;   /* tamanho do logo */
+  height: 40px;
   width: auto;
   display: block;
 }
 
-/* remove o fundo verde quando for imagem */
+.logo-vendacerta {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* remove o fundo quando for imagem */
 nav ul li a img {
   background: none !important;
 }
 
+/* ===== Popup de imagem ===== */
 .popup-img {
-  display: none; /* escondido por padrão */
+  display: none;
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;

@@ -13,14 +13,24 @@
 
 <body>
 
-    <header>
-        <div class="header-horizontal">
-            <a href="index.html">
-                <img src="logo verifik.png" alt="Logo Verifik" title="Logo Verifik" class="logo" />
+  <header>
+    <div class="header-horizontal">
+      <a href="index.html">
+        <img src="logo verifik.png" alt="Logo Verifik" title="Logo Verifik" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#" onclick="mostrarImagem(event)">
+              <img src="venda-certa.png" alt="VendaCerta" class="logo-vendacerta" />
             </a>
-            <nav>
-                <ul>
-                    <li><a href="#" class="btn-acessar">VendaCerta</a></li>
+          </li>
+
+          <!-- Popup escondido -->
+          <div id="popupImg" class="popup-img" onclick="fecharImagem()">
+            <img src="images.jpeg
+            " alt="Imagem Ampliada">
+          </div>
 
                     <!-- Dropdown Serviços -->
                     <li class="dropdown">
