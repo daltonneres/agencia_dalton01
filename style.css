@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #000000;
+  background: #121212 ;
   color: #ffffff;
   margin: 0;
 }
@@ -12,7 +12,7 @@ header {
   left: unset;
   width: 100%;
   height: 150px;
-  background: #000000;
+  background: #121212 ;
   z-index: 99999;
   display: flex;
   justify-content: center;
@@ -61,8 +61,8 @@ nav a {
 }
 
 .btn-acessar {
-  background: #00ffae; /* verde-água */
-  color: #000000;
+  background: #4DF6F9 ; /* verde-água */
+  color: #121212 ;
   padding: 10px 18px;
   border-radius: 6px;
   font-size: 16px;
@@ -74,7 +74,7 @@ nav a {
   position: relative;
   width: 100%;
   height: 500px;
-  background: #000000;
+  background: #121212 ;
   overflow: hidden;
 }
 
@@ -123,7 +123,7 @@ nav a {
 }
 
 .dot.active {
-  background-color: #00e1ff; /* ciano */
+  background-color: #4DF6F9;
 }
 
 /* ===== Soluções ===== */
@@ -131,7 +131,7 @@ nav a {
   text-align: center;
   font-size: 28px;
   margin-bottom: 20px;
-  color: #00e1ff; /* título com ciano */
+  color: #4DF6F9; /* título com ciano */
   font-weight: 700;
 }
 
@@ -140,7 +140,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #000000;
+  background-color: #454746  ;
 }
 
 /* Grid de cards genérico */
@@ -157,22 +157,23 @@ nav a {
 .card {
   flex: 1 1 300px;
   max-width: 320px;
-  background: #111111; /* preto suave */
+  background: #454746 ; /* fundo claro */
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   margin: 0 auto;
+  color: #ffffff;       /* texto branco */
 }
 
 .card img {
-  height: 60px;
-  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto 10px auto; /* centraliza horizontalmente */
+  height: 60px;             /* ou o tamanho que você já usa */
   object-fit: contain;
   width: auto;
 }
-
 .card h3 {
-  color: #ffffff;
+  color: #ffffff;       /* título branco */
   font-size: 18px;
   margin: 10px 0;
   min-height: 50px;
@@ -180,7 +181,7 @@ nav a {
 }
 
 .card p {
-  color: #cccccc;
+  color: #f0f0f0;       /* branco suave para leitura */
   font-size: 13px;
   flex-grow: 1;
   margin: 10px 0 20px 0;
@@ -189,9 +190,9 @@ nav a {
 
 .card a {
   display: inline-block;
-  background: #00ffae; /* botão verde-água */
+  background: #4DF6F9; /* botão verde-água */
   padding: 8px 16px;
-  color: #000000;
+  color: #121212 ;
   font-weight: bold;
   border-radius: 6px;
   text-decoration: none;
@@ -200,32 +201,27 @@ nav a {
 }
 
 .card a:hover {
-  background: #00cc8f;
+  background: #4DF6F9;
 }
 
 /* ===== FAQ ===== */
 .faq {
-  padding-top: 40px;
-  background-color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background: #454746;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .faq h2 {
   font-size: 28px;
   color: #ffffff;
-  margin-bottom: 10px;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .faq p {
   font-size: 16px;
-  color: #ffffff;
+  color: #f0f0f0;
   margin-bottom: 30px;
-  text-align: center;
-  max-width: 700px;
 }
 
 .accordion-title {
@@ -257,7 +253,7 @@ nav a {
   gap: 60px;
   padding: 60px 30px;
   flex-wrap: wrap;
-  background: #000000;
+  background: #121212 ;
 }
 
 .form-section img {
@@ -278,7 +274,7 @@ nav a {
   border-radius: 12px;
   max-width: 400px;
   width: 100%;
-  color: #000000;
+  color: #121212 ;
 }
 
 form {
@@ -300,8 +296,8 @@ form input {
 }
 
 form button {
-  background: #00ffae; /* verde-água */
-  color: #000000;
+  background: #4DF6F9; /* verde-água */
+  color: #121212 ;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -309,12 +305,12 @@ form button {
 }
 
 form button:hover {
-  background: #00cc8f;
+  background: #4DF6F9;
 }
 
 /* ===== Footer ===== */
 footer {
-  background: #000000;
+  background: #121212 ;
   color: #ffffff;
   padding: 50px 20px;
 }
@@ -337,7 +333,7 @@ footer {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #00e1ff; /* ciano da logo */
+  color: #4DF6F9; /* ciano da logo */
 }
 
 .footer-cols ul {
@@ -357,7 +353,7 @@ footer {
 }
 
 .footer-cols a:hover {
-  color: #00e1ff;
+  color: #4DF6F9;
 }
 
 .social-icons {
@@ -391,8 +387,8 @@ footer {
 .scroll-top {
   bottom: 20px;
   right: 20px;
-  background: #00ffae; /* botão verde-água */
-  color: #000000;
+  background: #4DF6F9; /* botão verde-água */
+  color: #121212 ;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -485,20 +481,24 @@ footer {
   }
 
   .card {
-    width: 90%;
-    max-width: 350px;
-    height: auto;
-  }
+  background: #454746 ;
+  color: #121212;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
 
   .faq h2 {
-    font-size: 24px;
-    padding: 0 10px;
-  }
+  font-size: 28px;
+  color: #121212;
+  margin-bottom: 20px;
+}
 
   .faq p {
-    font-size: 15px;
-    max-width: 90%;
-  }
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 30px;
+}
 
   .faq-cards {
     flex-direction: column;
@@ -548,17 +548,23 @@ footer {
   }
 
   .card h3 {
-    font-size: 16px;
-  }
+  color: #121212;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+}
 
   .card p {
-    font-size: 12px;
-  }
+  color: #333333;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 10px 0 20px 0;
+}
 }
 
 /* ===== Empresa / Institucional ===== */
 body {
-  background-color: #000000;
+  background-color: #121212 ;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
@@ -585,11 +591,11 @@ body {
 }
 
 .empresa-container h1 .azul {
-  color: #00e1ff; /* ciano */
+  color: #4DF6F9 ; /* ciano */
 }
 
 .empresa-container h1 .verde {
-  color: #00ffae; /* verde-água */
+  color: #4DF6F9 ; /* verde-água */
 }
 
 .empresa-container p {
@@ -618,9 +624,9 @@ body {
 /* ===== Blocos claros ===== */
 .caixas-section {
   padding: 60px 20px;
-  background-color: #ffffff;
+  background-color: #454746  ;
   text-align: center;
-  color: #000000;
+  color: #454746  ;
 }
 
 .caixas-container {
@@ -633,7 +639,7 @@ body {
 }
 
 .caixa {
-  background-color: #000000;
+  background-color: #121212 ;
   color: #ffffff;
   padding: 30px 20px;
   flex: 1 1 250px;
@@ -653,8 +659,8 @@ body {
 .conectados-section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #454746 ;
+  color: #121212  ;
 }
 
 .conectados-section h2 {
@@ -673,16 +679,11 @@ body {
 }
 
 .caixa-verde {
-  background-color: #000000cc;
-  color: #ffffff;
+  background: #454746;
+  color: #454746 ;
   padding: 30px 20px;
-  flex: 1 1 200px;
-  max-width: 250px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .caixa-verde:hover {
@@ -698,11 +699,11 @@ body {
 }
 
 .titulo-conectados .azul {
-  color: #00e1ff;
+  color: #4DF6F9 ;
 }
 
 .titulo-conectados .verde {
-  color: #00ffae;
+  color: #4DF6F9 ;
 }
 
 .caixas-conectados {
@@ -716,14 +717,11 @@ body {
 }
 
 .caixa-verde {
-  background-color: #000000;
+  background: #454746;
   color: #ffffff;
-  padding: 30px 25px;
-  flex: 1 1 250px;
-  max-width: 300px;
+  padding: 30px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .caixa-verde h3 {
@@ -746,20 +744,24 @@ body {
   }
 
   .caixa-verde {
-    max-width: 90%;
-  }
+  background: #454746;
+  color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 }
 
 /* ===== Diferenciais ===== */
 .diferenciais-franquias {
-  background-color: #000000a1;
+  background: #454746 ;
+  color: #121212;
   padding: 60px 20px;
   text-align: center;
-  color: #ffffff;
 }
 
 .diferenciais-franquias h2 {
-  color: #ffffff;
+  color: #ffffff ;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
@@ -776,14 +778,11 @@ body {
 }
 
 .item-diferencial {
-  background: #000000;
+  background: #454746 ;
+  color: #121212;
   border-radius: 12px;
   padding: 20px;
-  flex: 1 1 160px;
-  max-width: 180px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  cursor: default;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -814,20 +813,27 @@ body {
   }
 
   .item-diferencial {
-    max-width: 90%;
-  }
+  background: #454746;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 }
 
 /* ===== Segurança & Gestão ===== */
 .seguranca-gestao {
-  background-color: #ffffff;
+  background-color: #454746 ;
   padding: 60px 20px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 
 .seguranca-gestao h2 {
-  color: #000000;
+  color: #ffffff ;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -836,7 +842,7 @@ body {
 }
 
 .btn-conheca {
-  background-color: #00ffae; /* botão verde-água */
+  background-color: #4DF6F9 ; /* botão verde-água */
   color: #000000;
   font-weight: 700;
   font-size: 1.1rem;
@@ -848,12 +854,12 @@ body {
 }
 
 .btn-conheca:hover {
-  background-color: #00cc8f;
+  background-color: #4DF6F9 ;
 }
 
 /* Tirinha & contato */
 .tira-azul {
-  background-color: #000000;
+  background-color: #121212 ;
   padding: 15px 20px;
   display: flex;
   justify-content: flex-start;
@@ -861,7 +867,7 @@ body {
 
 .contato-box {
   background-color: #ffffff;
-  color: #000000;
+  color: #121212 ;
   padding: 20px 30px;
   border-radius: 8px;
   max-width: 320px;
@@ -887,7 +893,7 @@ body {
 }
 
 .footer-preto {
-  background-color: #000000;
+  background-color: #121212 ;
   color: #ffffff;
   padding: 10px 20px;
   text-align: center;
@@ -898,7 +904,7 @@ body {
 
 /* Páginas com variações */
 body.pagina-azul {
-  background-color: #000000;
+  background-color: #121212 ;
   color: #ffffff;
 }
 
@@ -909,7 +915,7 @@ body.pagina-branca {
 
 /* Empresa (variante clara) */
 .empresa-section {
-  background-color: #f9f9f9;
+  background-color: #454746 ;
   padding: 40px 20px;
   color: #333333;
   text-align: left;
@@ -929,7 +935,7 @@ body.pagina-branca {
 .empresa-container h2 {
   font-size: 20px;
   margin-top: 30px;
-  color: #00e1ff; /* ciano para subtítulos */
+  color: #4DF6F9 ; /* ciano para subtítulos */
 }
 
 .empresa-container p {
@@ -947,19 +953,19 @@ body.pagina-branca {
 }
 
 .verde {
-  color: #00ffae;
+  color: #4DF6F9; 
 }
 
 /* ===== Cards estilo "container" (variante clara) ===== */
 .solucoes {
-  background-color: #000000;
+  background-color: #121212 ;
   padding: 40px 20px;
   text-align: center;
 }
 
 .solucoes h2 {
   font-size: 28px;
-  color: #00e1ff;
+  color: #4DF6F9;
   margin-bottom: 40px;
 }
 
@@ -972,17 +978,11 @@ body.pagina-branca {
 }
 
 .card {
-  background: #111111;
-  width: 280px;
-  min-height: 520px;
-  border-radius: 16px;
-  padding: 24px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-  align-items: flex-start;
+  background: #454746 ;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
 }
 
 .card img {
@@ -996,10 +996,9 @@ body.pagina-branca {
 
 .card h3 {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  margin-bottom: 12px;
-  width: 100%;
+  margin: 10px 0;
 }
 
 .card ul {
@@ -1014,7 +1013,7 @@ body.pagina-branca {
 .card ul li::before {
   content: "+ ";
   font-weight: bold;
-  color: #00e1ff;
+  color: #4DF6F9;
 }
 
 .card .botao {
@@ -1023,7 +1022,7 @@ body.pagina-branca {
 
 /* ===== Hero Agro ===== */
 .hero-agro {
-  background-color: #000000;
+  background-color: #121212 ;
   color: #ffffff;
   padding: 60px 20px;
   font-family: 'Poppins', sans-serif;
@@ -1067,7 +1066,7 @@ body.pagina-branca {
 
 .form-agro {
   background: #ffffff;
-  color: #000000;
+  color: #121212 ;
   padding: 20px;
   border-radius: 10px;
   flex: 1 1 300px;
@@ -1090,8 +1089,8 @@ body.pagina-branca {
 
 .form-agro button {
   width: 100%;
-  background: #00ffae; /* botões em verde-água */
-  color: #000000;
+  background: #4DF6F9; /* botões em verde-água */
+  color: #121212 ;
   font-weight: bold;
   border: none;
   padding: 12px;
@@ -1136,7 +1135,7 @@ nav ul li {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #000000;
+  background: #121212 ;
   padding: 10px 0;
   border-radius: 6px;
   min-width: 220px;
@@ -1159,8 +1158,8 @@ nav ul li {
 }
 
 .dropdown-menu a:hover {
-  background: #00e1ff;
-  color: #000000;
+  background: #4DF6F9;
+  color: #121212 ;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -1184,17 +1183,18 @@ nav ul li {
   padding: 25px 30px;
   border: none;
   border-radius: 12px;
-  background: #ffffff;
+  background: #454746 ; /* fundo claro */
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   min-height: 180px;
   overflow: hidden;
+  color: #121212;
 }
 
 .icon-check {
   font-size: 22px;
-  color: #000000;
-  background: #00e1ff; /* ícone com ciano */
+  color: #121212 ;
+  background: #4DF6F9 ; /* ícone com ciano */
   border-radius: 6px;
   padding: 8px 10px;
   flex-shrink: 0;
@@ -1209,13 +1209,13 @@ nav ul li {
 
 .consulta-info h3 {
   font-size: 18px;
-  color: #000000;
+  color: #ffffff;
   margin: 0 0 8px 0;
 }
 
 .consulta-info p {
   font-size: 15px;
-  color: #333333;
+  color: #ffffff;
   line-height: 1.5;
   margin: 0;
 }
@@ -1239,8 +1239,8 @@ nav ul li {
 }
 
 .demo-form button {
-  background: #00ffae; /* botão verde-água */
-  color: #000000;
+  background: #4DF6F9 ; /* botão verde-água */
+  color: #121212 ;
   border: none;
   padding: 10px;
   border-radius: 6px;
@@ -1250,14 +1250,14 @@ nav ul li {
 }
 
 .demo-form button:hover {
-  background: #00cc8f;
+  background: #4DF6F9 ;
 }
 
 .resultado-demo {
   margin-top: 15px;
   padding: 12px;
   border-radius: 6px;
-  background: #f4f8ff;
+  background: #454746 ;
   color: #333333;
   font-size: 14px;
   display: none;
@@ -1278,7 +1278,7 @@ nav ul li {
 
 /* Caixa central */
 .popup {
-  background: #000000;
+  background: #121212 ;
   padding: 30px;
   border-radius: 12px;
   max-width: 400px;
@@ -1309,8 +1309,8 @@ nav ul li {
 
 /* Botão */
 .popup button {
-  background: #00ffae; /* botão verde-água */
-  color: #000000;
+  background: #4DF6F9 ; /* botão verde-água */
+  color: #121212 ;
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
@@ -1318,7 +1318,7 @@ nav ul li {
 }
 
 .popup button:hover {
-  background: #00cc8f;
+  background: #4DF6F9 ;
 }
 
 /* ===== Itens de navegação especiais ===== */
