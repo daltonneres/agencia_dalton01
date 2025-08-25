@@ -204,47 +204,6 @@ nav a {
   background: #4DF6F9;
 }
 
-/* ===== FAQ ===== */
-.faq {
-  background: #454746;
-  color: #ffffff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.faq h2 {
-  font-size: 28px;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.faq p {
-  font-size: 16px;
-  color: #f0f0f0;
-  margin-bottom: 30px;
-}
-
-.accordion-title {
-  padding: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #ffffff;
-  cursor: pointer;
-  text-align: left;
-}
-
-.accordion-title::after {
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-.accordion-item.open .accordion-title::after {
-  content: "\2212";
-}
-
 /* ===== Form & Lead ===== */
 .form-section {
   display: flex;
@@ -488,28 +447,6 @@ footer {
   text-align: center;
 }
 
-  .faq h2 {
-  font-size: 28px;
-  color: #121212;
-  margin-bottom: 20px;
-}
-
-  .faq p {
-  font-size: 16px;
-  color: #333333;
-  margin-bottom: 30px;
-}
-
-  .faq-cards {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .faq-card {
-    width: 90%;
-    max-width: 350px;
-  }
-
   .form-section {
     flex-direction: column;
     gap: 30px;
@@ -569,25 +506,6 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
-}
-
-.empresa-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.empresa-container {
-  max-width: 900px;
-}
-
-.empresa-container h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  line-height: 1.4;
 }
 
 .empresa-container h1 .azul {
@@ -679,8 +597,8 @@ body {
 }
 
 .caixa-verde {
-  background: #454746;
-  color: #454746 ;
+  background: #000000;
+  color: #000000 ;
   padding: 30px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -709,19 +627,22 @@ body {
 .caixas-conectados {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* centraliza na horizontal */
+  align-items: center;     /* centraliza verticalmente no caso de mais altura */
   gap: 25px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto;          /* centraliza o container */
   text-align: center;
 }
 
 .caixa-verde {
-  background: #454746;
+  background: #000000;
   color: #ffffff;
   padding: 30px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* sombra mais visível */
+  flex: 1 1 250px;         /* cards flexíveis mas não gigantes */
+  max-width: 280px;        /* largura máxima */
 }
 
 .caixa-verde h3 {
@@ -740,16 +661,19 @@ body {
 @media (max-width: 768px) {
   .caixas-conectados {
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* mantém no centro */
   }
 
   .caixa-verde {
-  background: #454746;
-  color: #ffffff;
-  padding: 30px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+    background: #000000;
+    color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    width: 90%;          /* ocupa quase toda largura da tela */
+    max-width: 350px;    /* mas não passa disso */
+    text-align: center;  /* garante centralização do conteúdo */
+  }
 }
 
 /* ===== Diferenciais ===== */
@@ -761,7 +685,7 @@ body {
 }
 
 .diferenciais-franquias h2 {
-  color: #ffffff ;
+  color: #4DF6F9 ;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
@@ -778,7 +702,7 @@ body {
 }
 
 .item-diferencial {
-  background: #454746 ;
+  background: #000000 ;
   color: #121212;
   border-radius: 12px;
   padding: 20px;
@@ -917,7 +841,7 @@ body.pagina-branca {
 .empresa-section {
   background-color: #454746 ;
   padding: 40px 20px;
-  color: #333333;
+  color: #ffffff;
   text-align: left;
 }
 
@@ -978,7 +902,7 @@ body.pagina-branca {
 }
 
 .card {
-  background: #454746 ;
+  background: #454746;
   color: #ffffff;
   border-radius: 10px;
   padding: 20px;
