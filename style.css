@@ -12,7 +12,7 @@ header {
   left: unset;
   width: 100%;
   height: 150px;
-  background: #F1F1F1 ;
+  background: #F1F1F1;
   z-index: 99999;
   display: flex;
   justify-content: center;
@@ -21,8 +21,37 @@ header {
   box-sizing: border-box;
 }
 
+/* espaçamento do header */
 .header-spacer {
   height: auto;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;   /* empilha logo e menu */
+    height: auto;            /* altura ajustável */
+    padding: 15px 20px;      /* reduz padding */
+  }
+
+  header nav ul {
+    flex-direction: row;     /* mantém em linha */
+    flex-wrap: wrap;         /* quebra em várias linhas se precisar */
+    gap: 8px;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+
+  header nav ul li a {
+    font-size: 14px;         /* reduz tamanho */
+    padding: 6px 10px;
+  }
+
+  .logo {
+    max-width: 140px;        /* reduz a logo */
+    height: auto;
+  }
 }
 
 /* Container com logo e menu lado a lado */
