@@ -1202,3 +1202,19 @@ nav ul li a img {
 .consulta-info li::marker {
   color: #121212;
 }
+
+/* Últimos 3 cards em uma linha só */
+.consultas-container .consulta-card:nth-last-child(-n+3) {
+  grid-column: span 1; /* cada um ocupa só 1 coluna */
+}
+
+.consultas-container {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Força os últimos 3 a ficarem lado a lado em telas grandes */
+@media (min-width: 1024px) {
+  .consultas-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
