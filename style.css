@@ -981,12 +981,21 @@ nav ul li {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  padding: 25px 30px;
+  padding: 15px 20px;          /* padding reduzido fechado */
   border: none;
   border-radius: 12px;
-  background: #EFFFFF; /* mesmo fundo do resto do site */
-  color: #121212;       /* texto preto */
-  min-height: 180px;
+  background: #EFFFFF;
+  color: #121212;
+  overflow: hidden;
+  cursor: pointer;
+
+  max-height: 60px;            /* fechado mostra só título + check */
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.consulta-card.open {
+  max-height: 600px;
+  padding: 25px 30px;
 }
 
 /* Responsivo: no celular volta para 1 card por linha */
@@ -1158,11 +1167,21 @@ nav ul li a img {
 }
 
 .consulta-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 15px 20px;          /* padding reduzido fechado */
+  border: none;
+  border-radius: 12px;
+  background: #EFFFFF;
+  color: #121212;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s ease;
-  max-height: 60px; /* altura mínima (só título visível) */
   cursor: pointer;
+
+  max-height: 60px;            /* fechado mostra só título + check */
+  transition: max-height 0.4s ease, padding 0.3s ease;
 }
+
 
 /* título sempre visível */
 .consulta-card h3 {
@@ -1178,8 +1197,10 @@ nav ul li a img {
 
 /* quando abrir */
 .consulta-card.open {
-  max-height: 600px; /* aumenta para caber lista + texto */
+  max-height: 600px;   /* expande para caber conteúdo */
+  padding: 25px 30px;  /* padding maior só quando aberto */
 }
+
 
 .consulta-card.open .card-content {
   opacity: 1;
