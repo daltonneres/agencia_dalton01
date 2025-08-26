@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verifik | Soluções em Crédito e Negativação</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-horizontal">
+      <a href="index.html">
+        <img src="logo verifik.png" alt="Logo Verifik" title="Logo Verifik" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#" onclick="mostrarImagem(event)">
+              <img src="venda-certa.png" alt="VendaCerta" class="logo-vendacerta" />
+            </a>
+          </li>
+
+          <!-- Popup escondido -->
+          <div id="popupImg" class="popup-img" onclick="fecharImagem()">
+            <img src="images.jpeg
+            " alt="Imagem Ampliada">
+          </div>
+
+          <!-- Dropdown Serviços -->
+          <li class="dropdown">
+            <a href="#">Serviços ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#relatorio-basico">Relatório Básico</a></li>
+              <li><a href="index.html#relatorio-avancado">Relatório Avançado</a></li>
+              <li><a href="index.html#recuperacao-credito">Recuperação de Crédito</a></li>
+              <li><a href="index.html#ok-check">OK Check</a></li>
+              <li><a href="index.html#ok-localiza">OK Localiza</a></li>
+              <li><a href="index.html#consulta-traz">O que a consulta traz?</a></li>
+              <li><a href="index.html#faturamento-presumido">Faturamento Presumido</a></li>
+              <li><a href="index.html#monitoramento-serasa">Monitoramento Serasa</a></li>
+              <li><a href="index.html#me-avise-serasa">Me Avise Serasa</a></li>
+              <li><a href="index.html#negociacao-devedores">Negociação de Devedores</a></li>
+              <li><a href="index.html#pix-pre">PIX Parcelado com antecipação</a></li>
+            </ul>
+          </li>
+
+          <li><a href="empresa.html">A Empresa</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="#">2ª Via de Boleto</a></li>
+          <li><a href="https://share.google/15lLZtasLEXeYLxlE">Atendimento</a></li>
+          <li><a href="https://app.checkok.com.br/entrar" class="btn-acessar">Acessar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="header-spacer"></div>
+
+  <section class="hero-agro">
+    <div class="container-agro">
+      <!-- Lado Esquerdo: Imagem + Título + Texto -->
+      <div class="agro-left">
+        <img src="agro.png" alt="Agronegócio" title="Agronegócio" class="agro-img" />
+        <h1>Agronegócio</h1>
+        <p>Os dados certos pra sua empresa vender com segurança no campo estão aqui!</p>
+        <small>
+          Desde 2021, a REDE OK - REPRESENTANTES vem apoiando negócios no agro com soluções de crédito inteligentes. Já
+          ajudamos milhares de empresas a consultarem e monitorarem produtores, propriedades e parceiros, evitando
+          prejuízos e aumentando a confiança nas negociações.
+          Nossa atuação cobre todo o Brasil — com alcance e precisão que fazem a diferença.
+        </small>
+      </div>
+
+      <!-- Lado Direito: Formulário -->
+      <form action="https://formsubmit.co/dev.neresdalton@gmail.com" method="POST" class="form-agro">
+        <label>* Nome</label>
+        <input type="text" name="nome" placeholder="Digite aqui..." required />
+
+        <label>* E-mail</label>
+        <input type="email" name="email" placeholder="Digite aqui..." required />
+
+        <label>* Telefone</label>
+        <input type="text" name="telefone" placeholder="(99) 99999-9999" required />
+
+        <label>* CNPJ da sua empresa</label>
+        <input type="text" name="cnpj" placeholder="Digite aqui..." required />
+
+        <label>* Razão Social</label>
+        <input type="text" name="razao_social" placeholder="Digite aqui..." required />
+
+        <label>* Valor em dívidas a serem recuperadas</label>
+        <input type="text" name="dividas" placeholder="Digite aqui..." required />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Imagem centralizada abaixo do formulário -->
+  <div class="imagem-centralizada">
+    <img src="dados.jpg" alt="Imagem Informativa" title="Imagem Informativa" />
+  </div>
+
+  <section class="solucoes animate-on-scroll">
+    <h2>As melhores soluções para todos os negócios.</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="ico_home_01_.png" alt="Consultas de CPF e CNPJ" title="Consultas de CPF e CNPJ" />
+        <h3>Consulta cadastral de CPF e CNPJ</h3>
+        <p>Consulte CPF e CNPJ de forma rápida e precisa. Acesse dados cadastrais, situação financeira, histórico de
+          dívidas e restrições. Reduza riscos, evite fraudes e tome decisões mais seguras em suas vendas a prazo, com
+          total segurança e praticidade.</p>
+        <a
+          href="https://wa.me/554532257420?text=Quero%20tratar%20sobre%3A%20Consulta%20cadastral%20de%20CPF%20e%20CNPJ">Contrate
+          agora</a>
+      </div>
+      <div class="card">
+        <img src="ico_home_02_.png" alt="Cobrança com régua automatizada" title="Cobrança com régua automatizada" />
+        <h3>Cobrança com régua automatizada</h3>
+        <p>Automatize o processo de cobrança com notificações por SMS, e-mail e WhatsApp. Recupere valores em aberto sem
+          precisar de equipes internas, reduza a inadimplência e mantenha seu fluxo de caixa saudável com um sistema
+          inteligente e eficaz.</p>
+        <a
+          href="https://wa.me/554532257420?text=Quero%20tratar%20sobre%3A%20Cobran%C3%A7a%20com%20r%C3%A9gua%20automatizada">Contrate
+          agora</a>
+      </div>
+      <div class="card">
+        <img src="ico_home_03_.png" alt="Monitoramento do CNPJ da Sua Empresa e Sócios"
+          title="Monitoramento do CNPJ da Sua Empresa e Sócios" />
+        <h3>Monitoramento de CNPJ</h3>
+        <p>Receba alertas sempre que houver movimentações no seu CNPJ, como protestos, ações judiciais, alterações
+          cadastrais e novos registros. Monitore também os CNPJs de fornecedores e parceiros para evitar surpresas e
+          garantir negociações mais seguras.</p>
+        <a href="https://wa.me/554532257420?text=Quero%20tratar%20sobre%3A%20Monitoramento%20de%20CNPJ">Contrate
+          agora</a>
+      </div>
+      <div class="card">
+        <img src="ico_home_04_.png" alt="Proteção de score" title="Proteção de score" />
+        <h3>Proteção de Score</h3>
+        <p>Acompanhe de perto seu SCORE e o da sua empresa com ferramentas de alerta e análise contínua. Mantenha sua
+          reputação positiva no mercado e esteja sempre preparado para concessões de crédito, com total controle e
+          confiança.</p>
+        <a href="https://wa.me/554532257420?text=Quero%20tratar%20sobre%3A%20Prote%C3%A7%C3%A3o%20de%20score">Contrate
+          agora</a>
+      </div>
+      <div class="card">
+        <img src="ico_home_05_.png" alt="Segurança para vendas no boleto e PIX parcelado"
+          title="Segurança para vendas no boleto e PIX parcelado" />
+        <h3>PIX PARCELADO</h3>
+        <p>Valide a identidade do cliente em tempo real, reduza fraudes e ofereça parcelamentos com mais segurança.
+          Nosso sistema analisa dados de risco automaticamente, proporcionando aprovação instantânea com base em
+          critérios personalizados para seu negócio.</p>
+        <a
+          href="https://wa.me/554532257420?text=Quero%20tratar%20sobre%3A%20Seguran%C3%A7a%20para%20vendas%20no%20boleto%20e%20PIX%20parcelado">Contrate
+          agora</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-cols">
+
+      <body class="pagina-azul">
+        <div>
+          <h4>Verifik - Representante: Rede OK - Serasa</h4>
+          <p>A Verifik oferece soluções em análise de crédito, negativação online e recuperação de dívidas. Atende
+            empresas que vendem a prazo via boleto ou PIX parcelado, com consultas de CPF/CNPJ, score de aprovação e
+            cobrança automatizada. Mais segurança nas vendas, menos inadimplência.</p>
+        </div>
+
+        <footer>
+          <div class="footer-links">
+            <!-- Institucional -->
+            <div>
+              <h4>Institucional</h4>
+              <ul>
+                <a href="index.html">Página Inicial</a> | <a href="empresa.html">Sobre a Verifik</a> | <a
+                  href="mailto:verifik@verifik.com.br">Trabalhe Conosco</a>
+              </ul>
+            </div>
+
+            <!-- Atendimento -->
+            <div>
+              <h4>Atendimento</h4>
+              <ul>
+                <a href="https://www.redeok.site/contato">Fale Conosco</a> | <a href="#">2ª Via de Boleto</a> | <a
+                  href="https://maps.app.goo.gl/Pt7wGVgUMw9mJD6t7">Localização</a>
+            </div>
+
+            <!-- Segurança -->
+            <div>
+              <h4>Segurança de Dados</h4>
+              <ul>
+                <a href="privacidade.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a>
+              </ul>
+            </div>
+          </div>
+
+          <h4>Siga a Verifik</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/people/Verifik-Serasa"><img src="facebook.png" alt="Nos siga no Facebook"
+                title="Nos siga no Facebook" /></a>
+            <a href="https://www.instagram.com/serasacascavel/"><img src="instagram.png" alt="Nos siga no Instagram"
+                title="Nos siga no Instagram" /></a>
+            <a href="https://www.linkedin.com/company/rede-ok/"><img src="Linkedin.png" alt="Nos siga no LinkedIn"
+                title="Nos siga no LinkedIn" /></a>
+          </div>
+    </div>
+
+    <p class="rodape-final">© Verifik Análise de Crédito LTDA - Representante: Rede OK - Serasa | CNPJ:
+      49.706.689/0001-63</p>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top">↑</button>
+
+  <a href="https://wa.me/554532257420" target="_blank" class="whatsapp-button">
+    <img src="whatsapp.png" alt="WhatsApp para contato na Empresa Verifik"
+      title="WhatsApp para contato na Empresa Verifik" />
+  </a>
+
+</body>
+
+</html>

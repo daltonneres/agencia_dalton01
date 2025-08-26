@@ -1,9 +1,9 @@
-
 body {
   font-family: 'Poppins', sans-serif;
-  background: #121212 ;
-  color: #ffffff;
+  background: #EFFFFF;
+  color: #121212;
   margin: 0;
+  padding: 0;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
   left: unset;
   width: 100%;
   height: 150px;
-  background: #121212 ;
+  background: #F1F1F1 ;
   z-index: 99999;
   display: flex;
   justify-content: center;
@@ -53,7 +53,7 @@ nav ul {
 }
 
 nav a {
-  color: #ffffff;
+  color: #121212;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -69,61 +69,21 @@ nav a {
   font-weight: bold;
 }
 
-/* ===== Banner ===== */
+/* ===== Banner fixo simples ===== */
 .banner {
   position: relative;
   width: 100%;
-  height: 500px;
-  background: #121212 ;
+  height: 350px;   /* altura menor para aparecer inteiro */
+  background: #F1F1F1;
   overflow: hidden;
 }
 
-.slider {
-  position: relative;
+.banner img {
+  width: 100%;
   height: 100%;
-  width: 100%;
-}
-
-.slider img {
-  position: absolute;
-  max-height: 80%;
-  max-width: 90%;
-  object-fit: contain;
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.slider img.active {
-  opacity: 1;
-  z-index: 2;
-}
-
-.indicators {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  z-index: 3;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dot.active {
-  background-color: #4DF6F9;
+  object-fit: contain; /* mostra a imagem inteira sem cortar */
+  display: block;
+  margin: 0 auto;
 }
 
 /* ===== Soluções ===== */
@@ -140,7 +100,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #454746  ;
+  background-color: #F1F1F1  ;
 }
 
 /* Grid de cards genérico */
@@ -157,12 +117,12 @@ nav a {
 .card {
   flex: 1 1 300px;
   max-width: 320px;
-  background: #454746 ; /* fundo claro */
+  background: #F1F1F1 ; /* fundo claro */
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   margin: 0 auto;
-  color: #ffffff;       /* texto branco */
+  color: #121212;       /* texto branco */
 }
 
 .card img {
@@ -173,7 +133,7 @@ nav a {
   width: auto;
 }
 .card h3 {
-  color: #ffffff;       /* título branco */
+  color: #121212;       /* título branco */
   font-size: 18px;
   margin: 10px 0;
   min-height: 50px;
@@ -181,7 +141,7 @@ nav a {
 }
 
 .card p {
-  color: #f0f0f0;       /* branco suave para leitura */
+  color: #121212;       /* branco suave para leitura */
   font-size: 13px;
   flex-grow: 1;
   margin: 10px 0 20px 0;
@@ -212,7 +172,7 @@ nav a {
   gap: 60px;
   padding: 60px 30px;
   flex-wrap: wrap;
-  background: #121212 ;
+  background: #F1F1F1 ;
 }
 
 .form-section img {
@@ -269,8 +229,8 @@ form button:hover {
 
 /* ===== Footer ===== */
 footer {
-  background: #121212 ;
-  color: #ffffff;
+  background: #f1f1f1 ;
+  color: #121212;
   padding: 50px 20px;
 }
 
@@ -292,7 +252,7 @@ footer {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #4DF6F9; /* ciano da logo */
+  color: #121212; /* ciano da logo */
 }
 
 .footer-cols ul {
@@ -306,13 +266,13 @@ footer {
 }
 
 .footer-cols a {
-  color: #ffffff;
+  color: #121212;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-cols a:hover {
-  color: #4DF6F9;
+  color: #EFFFFF;
 }
 
 .social-icons {
@@ -440,7 +400,7 @@ footer {
   }
 
   .card {
-  background: #454746 ;
+  background: #f1f1f1 ;
   color: #121212;
   border-radius: 10px;
   padding: 20px;
@@ -492,7 +452,7 @@ footer {
 }
 
   .card p {
-  color: #333333;
+  color: #121212;
   font-size: 14px;
   line-height: 1.4;
   margin: 10px 0 20px 0;
@@ -500,13 +460,6 @@ footer {
 }
 
 /* ===== Empresa / Institucional ===== */
-body {
-  background-color: #121212 ;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-}
 
 .empresa-container h1 .azul {
   color: #4DF6F9 ; /* ciano */
@@ -542,9 +495,9 @@ body {
 /* ===== Blocos claros ===== */
 .caixas-section {
   padding: 60px 20px;
-  background-color: #454746  ;
+  background-color: #F1F1F1  ;
   text-align: center;
-  color: #454746  ;
+  color: #F1F1F1  ;
 }
 
 .caixas-container {
@@ -558,7 +511,7 @@ body {
 
 .caixa {
   background-color: #121212 ;
-  color: #ffffff;
+  color: #f1f1f1;
   padding: 30px 20px;
   flex: 1 1 250px;
   max-width: 300px;
@@ -577,7 +530,7 @@ body {
 .conectados-section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #454746 ;
+  background-color: #F1F1F1 ;
   color: #121212  ;
 }
 
@@ -597,8 +550,8 @@ body {
 }
 
 .caixa-verde {
-  background: #000000;
-  color: #000000 ;
+  background: #121212;
+  color: #121212 ;
   padding: 30px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -636,7 +589,7 @@ body {
 }
 
 .caixa-verde {
-  background: #000000;
+  background: #121212;
   color: #ffffff;
   padding: 30px 20px;
   border-radius: 12px;
@@ -665,7 +618,7 @@ body {
   }
 
   .caixa-verde {
-    background: #000000;
+    background: #121212;
     color: #ffffff;
     padding: 30px 20px;
     border-radius: 12px;
@@ -678,7 +631,7 @@ body {
 
 /* ===== Diferenciais ===== */
 .diferenciais-franquias {
-  background: #454746 ;
+  background: #F1F1F1 ;
   color: #121212;
   padding: 60px 20px;
   text-align: center;
@@ -737,7 +690,7 @@ body {
   }
 
   .item-diferencial {
-  background: #454746;
+  background: #F1F1F1;
   color: #ffffff;
   border-radius: 12px;
   padding: 20px;
@@ -750,14 +703,14 @@ body {
 
 /* ===== Segurança & Gestão ===== */
 .seguranca-gestao {
-  background-color: #454746 ;
+  background-color: #F1F1F1 ;
   padding: 60px 20px;
   text-align: center;
-  color: #ffffff;
+  color: #121212;
 }
 
 .seguranca-gestao h2 {
-  color: #ffffff ;
+  color: #121212 ;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -790,7 +743,7 @@ body {
 }
 
 .contato-box {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   color: #121212 ;
   padding: 20px 30px;
   border-radius: 8px;
@@ -811,14 +764,14 @@ body {
 }
 
 .mini-tira-branca {
-  background-color: #ffffff;
+  background-color: #F1F1F1;
   height: 15px;
   width: 100%;
 }
 
 .footer-preto {
-  background-color: #121212 ;
-  color: #ffffff;
+  background-color: #f1f1f1 ;
+  color: #121212;
   padding: 10px 20px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -828,20 +781,20 @@ body {
 
 /* Páginas com variações */
 body.pagina-azul {
-  background-color: #121212 ;
-  color: #ffffff;
+  background-color: #f1f1f1 ;
+  color: #F1F1F1;
 }
 
 body.pagina-branca {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   color: #333333;
 }
 
 /* Empresa (variante clara) */
 .empresa-section {
-  background-color: #454746 ;
+  background-color: #F1F1F1 ;
   padding: 40px 20px;
-  color: #ffffff;
+  color: #121212;
   text-align: left;
 }
 
@@ -882,7 +835,7 @@ body.pagina-branca {
 
 /* ===== Cards estilo "container" (variante clara) ===== */
 .solucoes {
-  background-color: #121212 ;
+  background-color: #F1F1F1 ;
   padding: 40px 20px;
   text-align: center;
 }
@@ -902,8 +855,8 @@ body.pagina-branca {
 }
 
 .card {
-  background: #454746;
-  color: #ffffff;
+  background: #EFFFFF;
+  color: #121212;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -919,7 +872,7 @@ body.pagina-branca {
 }
 
 .card h3 {
-  color: #ffffff;
+  color: #121212;
   font-size: 18px;
   font-weight: 700;
   margin: 10px 0;
@@ -930,7 +883,7 @@ body.pagina-branca {
   padding: 0;
   margin: 0 0 20px;
   font-size: 14px;
-  color: #cccccc;
+  color: #121212;
   width: 100%;
 }
 
@@ -942,111 +895,6 @@ body.pagina-branca {
 
 .card .botao {
   align-self: center;
-}
-
-/* ===== Hero Agro ===== */
-.hero-agro {
-  background-color: #121212 ;
-  color: #ffffff;
-  padding: 60px 20px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.container-agro {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.agro-left {
-  flex: 1 1 500px;
-  max-width: 600px;
-}
-
-.agro-left .agro-img {
-  width: 400px;
-  margin-bottom: 100px;
-}
-
-.agro-left h1 {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.agro-left p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-.agro-left small {
-  font-size: 14px;
-  display: block;
-  margin-top: 10px;
-}
-
-.form-agro {
-  background: #ffffff;
-  color: #121212 ;
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1 1 300px;
-  max-width: 400px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.form-agro label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-.form-agro input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-
-.form-agro button {
-  width: 100%;
-  background: #4DF6F9; /* botões em verde-água */
-  color: #121212 ;
-  font-weight: bold;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.imagem-centralizada {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.imagem-centralizada img {
-  max-width: 900px;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-html,
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* ===== Dropdown Serviços ===== */
@@ -1082,7 +930,7 @@ nav ul li {
 }
 
 .dropdown-menu a:hover {
-  background: #4DF6F9;
+  background: #EFFFFF;
   color: #121212 ;
 }
 
@@ -1092,9 +940,9 @@ nav ul li {
 
 /* ===== Consultas ===== */
 .consultas-container {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+  gap: 20px; /* espaço entre os cards */
   max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
@@ -1107,18 +955,22 @@ nav ul li {
   padding: 25px 30px;
   border: none;
   border-radius: 12px;
-  background: #454746 ; /* fundo claro */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  background: #EFFFFF; /* mesmo fundo do resto do site */
+  color: #121212;       /* texto preto */
   min-height: 180px;
-  overflow: hidden;
-  color: #121212;
+}
+
+/* Responsivo: no celular volta para 1 card por linha */
+@media (max-width: 768px) {
+  .consultas-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .icon-check {
   font-size: 22px;
-  color: #121212 ;
-  background: #4DF6F9 ; /* ícone com ciano */
+  color: #4DF6F9;      /* destaque ciano */
+  background: #EFFFFF; /* mantém ícone no mesmo fundo */
   border-radius: 6px;
   padding: 8px 10px;
   flex-shrink: 0;
@@ -1126,22 +978,15 @@ nav ul li {
 }
 
 /* Área do texto */
-.consulta-info {
-  padding: 30px;
-  flex: 1;
+.consulta-info h3,
+.consulta-info p,
+.consulta-info ul,
+.consulta-info li {
+  color: #121212; /* texto preto para todos os elementos internos */
 }
 
-.consulta-info h3 {
-  font-size: 18px;
-  color: #ffffff;
-  margin: 0 0 8px 0;
-}
-
-.consulta-info p {
-  font-size: 15px;
-  color: #ffffff;
-  line-height: 1.5;
-  margin: 0;
+.consulta-info ul li::marker {
+  color: #4DF6F9; /* bolinhas ciano */
 }
 
 .demo-form {
@@ -1164,7 +1009,7 @@ nav ul li {
 
 .demo-form button {
   background: #4DF6F9 ; /* botão verde-água */
-  color: #121212 ;
+  color: #f1f1f1 ;
   border: none;
   padding: 10px;
   border-radius: 6px;
@@ -1181,8 +1026,8 @@ nav ul li {
   margin-top: 15px;
   padding: 12px;
   border-radius: 6px;
-  background: #454746 ;
-  color: #333333;
+  background: #121212 ;
+  color: #121212;
   font-size: 14px;
   display: none;
 }
@@ -1242,7 +1087,7 @@ nav ul li {
 }
 
 .popup button:hover {
-  background: #4DF6F9 ;
+  background: #f1f1f1 ;
 }
 
 /* ===== Itens de navegação especiais ===== */
@@ -1281,4 +1126,79 @@ nav ul li a img {
   max-height: 90%;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.consulta-card {
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  max-height: 60px; /* altura mínima (só título visível) */
+  cursor: pointer;
+}
+
+/* título sempre visível */
+.consulta-card h3 {
+  margin: 0;
+}
+
+/* bloco escondido inicialmente */
+.consulta-card .card-content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 10px;
+}
+
+/* quando abrir */
+.consulta-card.open {
+  max-height: 600px; /* aumenta para caber lista + texto */
+}
+
+.consulta-card.open .card-content {
+  opacity: 1;
+}
+
+.consulta-info ul,
+.consulta-info li {
+  color: #121212 !important;  /* texto preto */
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.consulta-info ul {
+  margin-top: 8px;
+  padding-left: 20px;
+  list-style: disc; /* bolinhas pretas padrão */
+}
+
+.consulta-info li::marker {
+  color: #121212; /* bolinha preta */
+}
+
+/* Esconde conteúdo inicialmente */
+.consulta-card .card-content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Mostra ao abrir */
+.consulta-card.open .card-content {
+  opacity: 1;
+}
+
+/* Estilo UL */
+.consulta-info ul,
+.consulta-info li {
+  color: #121212;  /* preto */
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.consulta-info ul {
+  margin-top: 8px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.consulta-info li::marker {
+  color: #121212;
 }
