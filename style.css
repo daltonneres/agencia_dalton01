@@ -11,7 +11,7 @@ header {
   top: unset;
   left: unset;
   width: 100%;
-  height: 150px;
+  height: 110px;
   background: #F1F1F1;
   z-index: 99999;
   display: flex;
@@ -29,14 +29,19 @@ header {
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;   /* empilha logo e menu */
-    height: auto;            /* altura ajustável */
-    padding: 15px 20px;      /* reduz padding */
+    flex-direction: column;
+    /* empilha logo e menu */
+    height: auto;
+    /* altura ajustável */
+    padding: 15px 20px;
+    /* reduz padding */
   }
 
   header nav ul {
-    flex-direction: row;     /* mantém em linha */
-    flex-wrap: wrap;         /* quebra em várias linhas se precisar */
+    flex-direction: row;
+    /* mantém em linha */
+    flex-wrap: wrap;
+    /* quebra em várias linhas se precisar */
     gap: 8px;
     justify-content: center;
     padding: 0;
@@ -44,12 +49,14 @@ header {
   }
 
   header nav ul li a {
-    font-size: 14px;         /* reduz tamanho */
+    font-size: 14px;
+    /* reduz tamanho */
     padding: 6px 10px;
   }
 
   .logo {
-    max-width: 140px;        /* reduz a logo */
+    max-width: 140px;
+    /* reduz a logo */
     height: auto;
   }
 }
@@ -90,8 +97,9 @@ nav a {
 }
 
 .btn-acessar {
-  background: #4DF6F9 ; /* verde-água */
-  color: #121212 ;
+  background: #4DF6F9;
+  /* verde-água */
+  color: #121212;
   padding: 10px 18px;
   border-radius: 6px;
   font-size: 16px;
@@ -102,7 +110,8 @@ nav a {
 .banner {
   position: relative;
   width: 100%;
-  height: 350px;   /* altura menor para aparecer inteiro */
+  height: 350px;
+  /* altura menor para aparecer inteiro */
   background: #F1F1F1;
   overflow: hidden;
 }
@@ -110,7 +119,8 @@ nav a {
 .banner img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* mostra a imagem inteira sem cortar */
+  object-fit: contain;
+  /* mostra a imagem inteira sem cortar */
   display: block;
   margin: 0 auto;
 }
@@ -120,7 +130,8 @@ nav a {
   text-align: center;
   font-size: 28px;
   margin-bottom: 20px;
-  color: #4DF6F9; /* título com ciano */
+  color: #4DF6F9;
+  /* título com ciano */
   font-weight: 700;
 }
 
@@ -129,7 +140,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F1F1F1  ;
+  background-color: #F1F1F1;
 }
 
 /* Grid de cards genérico */
@@ -141,28 +152,31 @@ nav a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  align-items: stretch;
+  /* força altura igual */
 }
 
 .card {
-  flex: 1 1 300px;
+  flex: 1 1 280px;
+  /* ocupa menos espaço mínimo */
   max-width: 320px;
-  background: #F1F1F1 ; /* fundo claro */
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  margin: 0 auto;
-  color: #121212;       /* texto branco */
+  margin: 0;
+  /* remove margin auto que criava o buraco */
 }
 
 .card img {
   display: block;
-  margin: 0 auto 10px auto; /* centraliza horizontalmente */
-  height: 60px;             /* ou o tamanho que você já usa */
+  margin: 0 auto 10px auto;
+  /* centraliza horizontalmente */
+  height: 60px;
+  /* ou o tamanho que você já usa */
   object-fit: contain;
   width: auto;
 }
+
 .card h3 {
-  color: #121212;       /* título branco */
+  color: #121212;
+  /* título branco */
   font-size: 18px;
   margin: 10px 0;
   min-height: 50px;
@@ -170,7 +184,8 @@ nav a {
 }
 
 .card p {
-  color: #121212;       /* branco suave para leitura */
+  color: #121212;
+  /* branco suave para leitura */
   font-size: 13px;
   flex-grow: 1;
   margin: 10px 0 20px 0;
@@ -179,9 +194,10 @@ nav a {
 
 .card a {
   display: inline-block;
-  background: #4DF6F9; /* botão verde-água */
+  background: #4DF6F9;
+  /* botão verde-água */
   padding: 8px 16px;
-  color: #121212 ;
+  color: #121212;
   font-weight: bold;
   border-radius: 6px;
   text-decoration: none;
@@ -201,11 +217,12 @@ nav a {
   gap: 60px;
   padding: 60px 30px;
   flex-wrap: wrap;
-  background: #F1F1F1 ;
+  background: #F1F1F1;
 }
 
 .form-section img {
-  max-width: 600px;
+  flex: 0 0 40%;   /* ocupa no máximo 40% */
+  max-width: 400px; /* limite absoluto, não passa disso */
   height: auto;
 }
 
@@ -217,12 +234,13 @@ nav a {
 }
 
 .formulario-box {
+  flex: 0 0 60%;   /* pega o resto da tela */
+  max-width: 500px;
+  width: 100%;
   background: #ffffff;
   padding: 30px;
   border-radius: 12px;
-  max-width: 400px;
-  width: 100%;
-  color: #121212 ;
+  color: #121212;
 }
 
 form {
@@ -244,8 +262,9 @@ form input {
 }
 
 form button {
-  background: #4DF6F9; /* verde-água */
-  color: #121212 ;
+  background: #4DF6F9;
+  /* verde-água */
+  color: #121212;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -258,73 +277,74 @@ form button:hover {
 
 /* ===== Footer ===== */
 footer {
-  background: #f1f1f1 ;
-    color: #121212;
-      padding: 50px 20px;
-      }
+  background: #f1f1f1;
+  color: #121212;
+  padding: 50px 20px;
+}
 
-      .footer-cols {
-        display: flex;
-          justify-content: space-between;
-            flex-wrap: wrap;
-              max-width: 1200px;
-                margin: 0 auto 30px;
-                  gap: 40px;
-                  }
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  gap: 40px;
+}
 
-                  .footer-cols div {
-                    flex: 1 1 220px;
-                      min-width: 200px;
-                      }
+.footer-cols div {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
 
-                      .footer-cols h4 {
-                        font-size: 18px;
-                          font-weight: 700;
-                            margin-bottom: 15px;
-                              color: #121212; /* ciano da logo */
-                              }
+.footer-cols h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #121212;
+  /* ciano da logo */
+}
 
-                              .footer-cols ul {
-                                list-style: none;
-                                  padding: 0;
-                                    margin: 0;
-                                    }
+.footer-cols ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-                                    .footer-cols li {
-                                      margin: 8px 0;
-                                      }
+.footer-cols li {
+  margin: 8px 0;
+}
 
-                                      .footer-cols a {
-                                        color: #121212;
-                                          text-decoration: none;
-                                            transition: color 0.3s;
-                                            }
+.footer-cols a {
+  color: #121212;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-                                            .footer-cols a:hover {
-                                              color: #EFFFFF;
-                                              }
+.footer-cols a:hover {
+  color: #EFFFFF;
+}
 
-                                              .social-icons {
-                                                margin-top: 15px;
-                                                }
+.social-icons {
+  margin-top: 15px;
+}
 
-                                                .social-icons img {
-                                                  width: 30px;
-                                                    margin-right: 10px;
-                                                      transition: transform 0.3s ease;
-                                                      }
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
 
-                                                      .social-icons img:hover {
-                                                        transform: scale(1.1);
-                                                        }
+.social-icons img:hover {
+  transform: scale(1.1);
+}
 
-                                                        .rodape-final {
-                                                          text-align: center;
-                                                            font-size: 14px;
-                                                              border-top: 1px solid rgba(255, 255, 255, 0.2);
-                                                                padding-top: 15px;
-                                                                }
-                                                                
+.rodape-final {
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+}
+
 /* Botões fixos */
 .scroll-top,
 .whatsapp-button img {
@@ -335,8 +355,9 @@ footer {
 .scroll-top {
   bottom: 20px;
   right: 20px;
-  background: #4DF6F9; /* botão verde-água */
-  color: #121212 ;
+  background: #4DF6F9;
+  /* botão verde-água */
+  color: #121212;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -429,12 +450,12 @@ footer {
   }
 
   .card {
-  background: #f1f1f1 ;
-  color: #121212;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-}
+    background: #f1f1f1;
+    color: #121212;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
 
   .form-section {
     flex-direction: column;
@@ -443,7 +464,7 @@ footer {
   }
 
   .form-section img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
   }
 
@@ -474,28 +495,30 @@ footer {
   }
 
   .card h3 {
-  color: #121212;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 10px 0;
-}
+    color: #121212;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+  }
 
   .card p {
-  color: #121212;
-  font-size: 14px;
-  line-height: 1.4;
-  margin: 10px 0 20px 0;
-}
+    color: #121212;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 10px 0 20px 0;
+  }
 }
 
 /* ===== Empresa / Institucional ===== */
 
 .empresa-container h1 .azul {
-  color: #4DF6F9 ; /* ciano */
+  color: #4DF6F9;
+  /* ciano */
 }
 
 .empresa-container h1 .verde {
-  color: #4DF6F9 ; /* verde-água */
+  color: #4DF6F9;
+  /* verde-água */
 }
 
 .empresa-container p {
@@ -524,9 +547,9 @@ footer {
 /* ===== Blocos claros ===== */
 .caixas-section {
   padding: 60px 20px;
-  background-color: #F1F1F1  ;
+  background-color: #F1F1F1;
   text-align: center;
-  color: #F1F1F1  ;
+  color: #F1F1F1;
 }
 
 .caixas-container {
@@ -539,7 +562,7 @@ footer {
 }
 
 .caixa {
-  background-color: #121212 ;
+  background-color: #121212;
   color: #f1f1f1;
   padding: 30px 20px;
   flex: 1 1 250px;
@@ -559,8 +582,8 @@ footer {
 .conectados-section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #F1F1F1 ;
-  color: #121212  ;
+  background-color: #F1F1F1;
+  color: #121212;
 }
 
 .conectados-section h2 {
@@ -580,10 +603,10 @@ footer {
 
 .caixa-verde {
   background: #121212;
-  color: #121212 ;
+  color: #121212;
   padding: 30px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .caixa-verde:hover {
@@ -599,21 +622,24 @@ footer {
 }
 
 .titulo-conectados .azul {
-  color: #4DF6F9 ;
+  color: #4DF6F9;
 }
 
 .titulo-conectados .verde {
-  color: #4DF6F9 ;
+  color: #4DF6F9;
 }
 
 .caixas-conectados {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centraliza na horizontal */
-  align-items: center;     /* centraliza verticalmente no caso de mais altura */
+  justify-content: center;
+  /* centraliza na horizontal */
+  align-items: center;
+  /* centraliza verticalmente no caso de mais altura */
   gap: 25px;
   max-width: 900px;
-  margin: 0 auto;          /* centraliza o container */
+  margin: 0 auto;
+  /* centraliza o container */
   text-align: center;
 }
 
@@ -622,9 +648,12 @@ footer {
   color: #ffffff;
   padding: 30px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* sombra mais visível */
-  flex: 1 1 250px;         /* cards flexíveis mas não gigantes */
-  max-width: 280px;        /* largura máxima */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  /* sombra mais visível */
+  flex: 1 1 250px;
+  /* cards flexíveis mas não gigantes */
+  max-width: 280px;
+  /* largura máxima */
 }
 
 .caixa-verde h3 {
@@ -643,7 +672,8 @@ footer {
 @media (max-width: 768px) {
   .caixas-conectados {
     flex-direction: column;
-    align-items: center; /* mantém no centro */
+    align-items: center;
+    /* mantém no centro */
   }
 
   .caixa-verde {
@@ -651,23 +681,26 @@ footer {
     color: #ffffff;
     padding: 30px 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    width: 90%;          /* ocupa quase toda largura da tela */
-    max-width: 350px;    /* mas não passa disso */
-    text-align: center;  /* garante centralização do conteúdo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    /* ocupa quase toda largura da tela */
+    max-width: 350px;
+    /* mas não passa disso */
+    text-align: center;
+    /* garante centralização do conteúdo */
   }
 }
 
 /* ===== Diferenciais ===== */
 .diferenciais-franquias {
-  background: #F1F1F1 ;
+  background: #F1F1F1;
   color: #121212;
   padding: 60px 20px;
   text-align: center;
 }
 
 .diferenciais-franquias h2 {
-  color: #4DF6F9 ;
+  color: #4DF6F9;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
@@ -684,11 +717,11 @@ footer {
 }
 
 .item-diferencial {
-  background: #000000 ;
+  background: #000000;
   color: #121212;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -719,27 +752,27 @@ footer {
   }
 
   .item-diferencial {
-  background: #F1F1F1;
-  color: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    background: #F1F1F1;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* ===== Segurança & Gestão ===== */
 .seguranca-gestao {
-  background-color: #F1F1F1 ;
+  background-color: #F1F1F1;
   padding: 60px 20px;
   text-align: center;
   color: #121212;
 }
 
 .seguranca-gestao h2 {
-  color: #121212 ;
+  color: #121212;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -748,7 +781,8 @@ footer {
 }
 
 .btn-conheca {
-  background-color: #4DF6F9 ; /* botão verde-água */
+  background-color: #4DF6F9;
+  /* botão verde-água */
   color: #000000;
   font-weight: 700;
   font-size: 1.1rem;
@@ -760,12 +794,12 @@ footer {
 }
 
 .btn-conheca:hover {
-  background-color: #4DF6F9 ;
+  background-color: #4DF6F9;
 }
 
 /* Tirinha & contato */
 .tira-azul {
-  background-color: #121212 ;
+  background-color: #121212;
   padding: 15px 20px;
   display: flex;
   justify-content: flex-start;
@@ -773,7 +807,7 @@ footer {
 
 .contato-box {
   background-color: #f1f1f1;
-  color: #121212 ;
+  color: #121212;
   padding: 20px 30px;
   border-radius: 8px;
   max-width: 320px;
@@ -799,7 +833,7 @@ footer {
 }
 
 .footer-preto {
-  background-color: #f1f1f1 ;
+  background-color: #f1f1f1;
   color: #121212;
   padding: 10px 20px;
   text-align: center;
@@ -810,7 +844,7 @@ footer {
 
 /* Páginas com variações */
 body.pagina-azul {
-  background-color: #f1f1f1 ;
+  background-color: #f1f1f1;
   color: #F1F1F1;
 }
 
@@ -821,7 +855,7 @@ body.pagina-branca {
 
 /* Empresa (variante clara) */
 .empresa-section {
-  background-color: #F1F1F1 ;
+  background-color: #F1F1F1;
   padding: 40px 20px;
   color: #121212;
   text-align: left;
@@ -841,7 +875,8 @@ body.pagina-branca {
 .empresa-container h2 {
   font-size: 20px;
   margin-top: 30px;
-  color: #4DF6F9 ; /* ciano para subtítulos */
+  color: #4DF6F9;
+  /* ciano para subtítulos */
 }
 
 .empresa-container p {
@@ -859,12 +894,12 @@ body.pagina-branca {
 }
 
 .verde {
-  color: #4DF6F9; 
+  color: #4DF6F9;
 }
 
 /* ===== Cards estilo "container" (variante clara) ===== */
 .solucoes {
-  background-color: #F1F1F1 ;
+  background-color: #F1F1F1;
   padding: 40px 20px;
   text-align: center;
 }
@@ -936,7 +971,7 @@ nav ul li {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #121212 ;
+  background: #121212;
   padding: 10px 0;
   border-radius: 6px;
   min-width: 220px;
@@ -960,7 +995,7 @@ nav ul li {
 
 .dropdown-menu a:hover {
   background: #EFFFFF;
-  color: #121212 ;
+  color: #121212;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -970,8 +1005,10 @@ nav ul li {
 /* ===== Consultas ===== */
 .consultas-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
-  gap: 20px; /* espaço entre os cards */
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 colunas iguais */
+  gap: 20px;
+  /* espaço entre os cards */
   max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
@@ -981,7 +1018,10 @@ nav ul li {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  padding: 15px 20px;          /* padding reduzido fechado */
+  max-height: 20px;
+  /* reduz ainda mais quando fechado */
+  padding: 10px 10px;
+  /* padding menor no estado fechado */
   border: none;
   border-radius: 12px;
   background: #EFFFFF;
@@ -989,13 +1029,15 @@ nav ul li {
   overflow: hidden;
   cursor: pointer;
 
-  max-height: 60px;            /* fechado mostra só título + check */
+  max-height: 60px;
+  /* fechado mostra só título + check */
   transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
 .consulta-card.open {
   max-height: 600px;
   padding: 25px 30px;
+  /* mantém espaçamento confortável quando aberto */
 }
 
 /* Responsivo: no celular volta para 1 card por linha */
@@ -1005,26 +1047,18 @@ nav ul li {
   }
 }
 
-.icon-check {
-  font-size: 22px;
-  color: #4DF6F9;      /* destaque ciano */
-  background: #EFFFFF; /* mantém ícone no mesmo fundo */
-  border-radius: 6px;
-  padding: 8px 10px;
-  flex-shrink: 0;
-  align-self: flex-start;
-}
-
 /* Área do texto */
 .consulta-info h3,
 .consulta-info p,
 .consulta-info ul,
 .consulta-info li {
-  color: #121212; /* texto preto para todos os elementos internos */
+  color: #121212;
+  /* texto preto para todos os elementos internos */
 }
 
 .consulta-info ul li::marker {
-  color: #4DF6F9; /* bolinhas ciano */
+  color: #4DF6F9;
+  /* bolinhas ciano */
 }
 
 .demo-form {
@@ -1046,8 +1080,9 @@ nav ul li {
 }
 
 .demo-form button {
-  background: #4DF6F9 ; /* botão verde-água */
-  color: #f1f1f1 ;
+  background: #4DF6F9;
+  /* botão verde-água */
+  color: #f1f1f1;
   border: none;
   padding: 10px;
   border-radius: 6px;
@@ -1057,14 +1092,14 @@ nav ul li {
 }
 
 .demo-form button:hover {
-  background: #4DF6F9 ;
+  background: #4DF6F9;
 }
 
 .resultado-demo {
   margin-top: 15px;
   padding: 12px;
   border-radius: 6px;
-  background: #121212 ;
+  background: #121212;
   color: #121212;
   font-size: 14px;
   display: none;
@@ -1074,9 +1109,11 @@ nav ul li {
 /* Fundo escuro */
 .popup-overlay {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1085,21 +1122,22 @@ nav ul li {
 
 /* Caixa central */
 .popup {
-  background: #121212 ;
+  background: #121212;
   padding: 30px;
   border-radius: 12px;
   max-width: 400px;
   width: 90%;
   text-align: center;
   position: relative;
-  box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
   color: #ffffff;
 }
 
 /* Botão fechar */
 .close-btn {
   position: absolute;
-  top: 10px; right: 15px;
+  top: 10px;
+  right: 15px;
   font-size: 20px;
   cursor: pointer;
   color: #ffffff;
@@ -1116,8 +1154,9 @@ nav ul li {
 
 /* Botão */
 .popup button {
-  background: #4DF6F9 ; /* botão verde-água */
-  color: #121212 ;
+  background: #4DF6F9;
+  /* botão verde-água */
+  color: #121212;
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
@@ -1125,7 +1164,7 @@ nav ul li {
 }
 
 .popup button:hover {
-  background: #f1f1f1 ;
+  background: #f1f1f1;
 }
 
 /* ===== Itens de navegação especiais ===== */
@@ -1150,9 +1189,11 @@ nav ul li a img {
 .popup-img {
   display: none;
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.85);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
   z-index: 9999;
@@ -1163,14 +1204,17 @@ nav ul li a img {
   max-width: 90%;
   max-height: 90%;
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .consulta-card {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  padding: 15px 20px;          /* padding reduzido fechado */
+  max-height: 40px;
+  /* reduz ainda mais quando fechado */
+  padding: 10px 15px;
+  /* padding menor no estado fechado */
   border: none;
   border-radius: 12px;
   background: #EFFFFF;
@@ -1178,7 +1222,8 @@ nav ul li a img {
   overflow: hidden;
   cursor: pointer;
 
-  max-height: 60px;            /* fechado mostra só título + check */
+  max-height: 60px;
+  /* fechado mostra só título + check */
   transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
@@ -1197,8 +1242,9 @@ nav ul li a img {
 
 /* quando abrir */
 .consulta-card.open {
-  max-height: 600px;   /* expande para caber conteúdo */
-  padding: 25px 30px;  /* padding maior só quando aberto */
+  max-height: 600px;
+  padding: 25px 30px;
+  /* mantém espaçamento confortável quando aberto */
 }
 
 
@@ -1208,7 +1254,8 @@ nav ul li a img {
 
 .consulta-info ul,
 .consulta-info li {
-  color: #121212 !important;  /* texto preto */
+  color: #121212 !important;
+  /* texto preto */
   font-size: 15px;
   line-height: 1.5;
 }
@@ -1216,11 +1263,13 @@ nav ul li a img {
 .consulta-info ul {
   margin-top: 8px;
   padding-left: 20px;
-  list-style: disc; /* bolinhas pretas padrão */
+  list-style: disc;
+  /* bolinhas pretas padrão */
 }
 
 .consulta-info li::marker {
-  color: #121212; /* bolinha preta */
+  color: #121212;
+  /* bolinha preta */
 }
 
 /* Esconde conteúdo inicialmente */
@@ -1238,7 +1287,8 @@ nav ul li a img {
 /* Estilo UL */
 .consulta-info ul,
 .consulta-info li {
-  color: #121212;  /* preto */
+  color: #121212;
+  /* preto */
   font-size: 15px;
   line-height: 1.5;
 }
@@ -1255,7 +1305,8 @@ nav ul li a img {
 
 /* Últimos 3 cards em uma linha só */
 .consultas-container .consulta-card:nth-last-child(-n+3) {
-  grid-column: span 1; /* cada um ocupa só 1 coluna */
+  grid-column: span 1;
+  /* cada um ocupa só 1 coluna */
 }
 
 .consultas-container {
