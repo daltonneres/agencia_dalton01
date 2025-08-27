@@ -259,72 +259,72 @@ form button:hover {
 /* ===== Footer ===== */
 footer {
   background: #f1f1f1 ;
-  color: #121212;
-  padding: 50px 20px;
-}
+    color: #121212;
+      padding: 50px 20px;
+      }
 
-.footer-cols {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto 30px;
-  gap: 40px;
-}
+      .footer-cols {
+        display: flex;
+          justify-content: space-between;
+            flex-wrap: wrap;
+              max-width: 1200px;
+                margin: 0 auto 30px;
+                  gap: 40px;
+                  }
 
-.footer-cols div {
-  flex: 1 1 220px;
-  min-width: 200px;
-}
+                  .footer-cols div {
+                    flex: 1 1 220px;
+                      min-width: 200px;
+                      }
 
-.footer-cols h4 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #121212; /* ciano da logo */
-}
+                      .footer-cols h4 {
+                        font-size: 18px;
+                          font-weight: 700;
+                            margin-bottom: 15px;
+                              color: #121212; /* ciano da logo */
+                              }
 
-.footer-cols ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+                              .footer-cols ul {
+                                list-style: none;
+                                  padding: 0;
+                                    margin: 0;
+                                    }
 
-.footer-cols li {
-  margin: 8px 0;
-}
+                                    .footer-cols li {
+                                      margin: 8px 0;
+                                      }
 
-.footer-cols a {
-  color: #121212;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+                                      .footer-cols a {
+                                        color: #121212;
+                                          text-decoration: none;
+                                            transition: color 0.3s;
+                                            }
 
-.footer-cols a:hover {
-  color: #EFFFFF;
-}
+                                            .footer-cols a:hover {
+                                              color: #EFFFFF;
+                                              }
 
-.social-icons {
-  margin-top: 15px;
-}
+                                              .social-icons {
+                                                margin-top: 15px;
+                                                }
 
-.social-icons img {
-  width: 30px;
-  margin-right: 10px;
-  transition: transform 0.3s ease;
-}
+                                                .social-icons img {
+                                                  width: 30px;
+                                                    margin-right: 10px;
+                                                      transition: transform 0.3s ease;
+                                                      }
 
-.social-icons img:hover {
-  transform: scale(1.1);
-}
+                                                      .social-icons img:hover {
+                                                        transform: scale(1.1);
+                                                        }
 
-.rodape-final {
-  text-align: center;
-  font-size: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 15px;
-}
-
+                                                        .rodape-final {
+                                                          text-align: center;
+                                                            font-size: 14px;
+                                                              border-top: 1px solid rgba(255, 255, 255, 0.2);
+                                                                padding-top: 15px;
+                                                                }
+                                                                
 /* Botões fixos */
 .scroll-top,
 .whatsapp-button img {
