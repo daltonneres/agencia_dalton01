@@ -117,12 +117,10 @@ nav a {
 }
 
 .banner img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain; /* mostra inteira */
+  width: 100%;      /* ocupa toda a largura */
+  height: auto;     /* ajusta a altura proporcional */
   display: block;
   margin: 0 auto;
-  background: #f1f1f1; /* cor de fundo igual do site */
 }
 
 /* ===== Soluções ===== */
@@ -437,13 +435,10 @@ footer {
   }
 
   .banner {
-    height: 300px;
-  }
-
-  .slider img {
-    max-height: 70%;
-    max-width: 90%;
-  }
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* mostra inteira */
+ }
 
   .solucoes h2 {
     font-size: 24px;
